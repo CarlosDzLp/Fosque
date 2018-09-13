@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Fosque.Views.Principal.MasterPage"
+    xmlns:page="clr-namespace:Fosque.Views.Principal"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    Title="Master"
+    BackgroundColor="White">
+    <MasterDetailPage.Master>
+        <page:MenuPage/>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage
+            BarTextColor="White"
+            BarBackgroundColor="#004C3F">
+            <x:Arguments>
+                <page:HomePage/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

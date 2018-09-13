@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Session.LoginPage"
+    xmlns:validate="clr-namespace:Fosque.Behaviors"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#004C3F">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                VerticalOptions="Center"
+                Margin="30,0">
+                <StackLayout.Spacing>
+                    <OnPlatform
+                        x:TypeArguments="x:Double"
+                        iOS="20"
+                        Android="10"/>
+                </StackLayout.Spacing>
+                <Image
+                    Source="logowhite.png"
+                    HeightRequest="200"
+                    WidthRequest="200"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+                <Entry
+                    BackgroundColor="#004C3F"
+                    Text="{Binding Usuario}"
+                    TextColor="White"
+                    Placeholder="Usuario"
+                    PlaceholderColor="White"/>
+                <Label
+                    Text="Debe ingresar un Usuario"
+                    TextColor="Red"
+                    FontSize="Micro"
+                    VerticalTextAlignment="Center"
+                    IsVisible="{Binding IsUsuario}"/>
+                <Entry
+                    BackgroundColor="#004C3F"
+                    Text="{Binding Documento}"
+                    TextColor="White"
+                    Placeholder="Numero de Documento"
+                    PlaceholderColor="White"
+                    Keyboard="Numeric">
+                    <Entry.Behaviors>  
+                        <validate:NumberValidate/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label
+                    Text="Debe ingresar un numero de documento"
+                    TextColor="Red"
+                    FontSize="Micro"
+                    VerticalTextAlignment="Center"
+                    IsVisible="{Binding IsDocumento}"/>
+                <Entry
+                    BackgroundColor="#004C3F"
+                    Text="{Binding Password}"
+                    TextColor="White"
+                    Placeholder="Contraseña"
+                    IsPassword="true"
+                    PlaceholderColor="White"/>
+                <Label
+                    Text="Debe ingresar una contraseña"
+                    TextColor="Red"
+                    FontSize="Micro"
+                    VerticalTextAlignment="Center"
+                    IsVisible="{Binding IsContrasena}"/>
+                <Button
+                    BackgroundColor="Black"
+                    Text="Ingresar"
+                    TextColor="White"
+                    Command="{Binding LoginCommand}"/>
+                <StackLayout
+                    Orientation="Horizontal"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Recuerdame"
+                        TextColor="White"
+                        FontSize="Small"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"/>
+                    <Switch
+                         IsToggled="{Binding IsToggled}"/>
+                </StackLayout>
+                <Label
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    TextColor="White"
+                    Text="¿Has olvidado tu contraseña?">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding ForgotPasswordCommand}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

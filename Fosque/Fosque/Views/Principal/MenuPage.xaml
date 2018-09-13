@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Principal.MenuPage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="Black"
+    Title="Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                Margin="20,40,20,20">
+                <Image
+                    Source="bannergray.png"/>
+            </StackLayout>
+            <ListView
+                SeparatorColor="White"
+                BackgroundColor="Black"
+                Footer=""
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                ItemsSource="{Binding ListMenuLateral}"
+                SelectedItem="{Binding ItemSelectedMenu}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                VerticalOptions="Center">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center"
+                                        Grid.Column="0">
+                                        <Image
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
+                                            Source="{Binding ImageMenu}"/>
+                                    </StackLayout>
+                                    <StackLayout
+                                        VerticalOptions="Center"
+                                        Grid.Column="1">
+                                        <Label
+                                            Text="{Binding TitleMenu}"
+                                            TextColor="White"
+                                            VerticalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

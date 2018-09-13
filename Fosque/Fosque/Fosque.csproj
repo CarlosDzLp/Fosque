@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />  
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Session\" />
+    <Folder Include="ViewModels\Session\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="Views\Principal\" />
+    <Folder Include="Dependency\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="DbLocal\" />
+    <Folder Include="ViewModels\MasterPrincipal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\HomeMenuItem.cs" />
+    <Compile Remove="Views\Principal\MyPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MenuPage.xaml">
+      <LogicalName>Fosque.Views.MenuPage.xaml</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
