@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{F380C90B-01A8-413F-93EB-D0C155158D31}|Default">
-  <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D76D5E3-9C66-4EC0-A830-FEE8A9662D96" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9C3418D1-BEAC-4932-ABE6-2D8D9C450D65" automaticSigning="False" />
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" line="136" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.G2R4C17523003416" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />

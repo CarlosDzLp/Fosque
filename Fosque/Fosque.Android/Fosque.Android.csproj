@@ -64,6 +64,9 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>3.0.0.5</Version>
     </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.1.4.168</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -164,6 +167,11 @@
     <AndroidResource Include="Resources\drawable\next.png" />
     <AndroidResource Include="Resources\drawable\cancel.png" />
     <AndroidResource Include="Resources\drawable\imagenotfound.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />

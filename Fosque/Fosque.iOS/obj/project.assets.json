@@ -20,6 +20,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.4.168": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -208,6 +222,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
+          "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Forms": "3.1.0.697729",
           "sqlite-net-pcl": "1.5.231"
@@ -239,6 +254,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.4.168": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -427,6 +456,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
+          "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Forms": "3.1.0.697729",
           "sqlite-net-pcl": "1.5.231"
@@ -458,6 +488,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.4.168": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -646,6 +690,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
+          "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Forms": "3.1.0.697729",
           "sqlite-net-pcl": "1.5.231"
@@ -677,6 +722,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Rg.Plugins.Popup/1.1.4.168": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll": {},
+          "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -865,6 +924,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
+          "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Forms": "3.1.0.697729",
           "sqlite-net-pcl": "1.5.231"
@@ -916,6 +976,35 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/1.1.4.168": {
+      "sha512": "pARxyFFrnOoCZfRbAiE8v3+8py/sH5SX8NJAjfaydJJO3cm13yNaNw8EelEONJVQY2T0zFhCfZSc4CDjjaSylQ==",
+      "type": "package",
+      "path": "rg.plugins.popup/1.1.4.168",
+      "files": [
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll.mdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
+        "lib/MonoAndroid/Rg.Plugins.Popup.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.IOS.pdb",
+        "lib/MonoTouch/Rg.Plugins.Popup.dll",
+        "lib/MonoTouch/Rg.Plugins.Popup.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.pdb",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.dll",
+        "lib/Xamarin.IOS/Rg.Plugins.Popup.pdb",
+        "lib/netstandard1.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard1.0/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.UWP.pdb",
+        "lib/uap10.0/Rg.Plugins.Popup.dll",
+        "lib/uap10.0/Rg.Plugins.Popup.pdb",
+        "readme.txt",
+        "rg.plugins.popup.1.1.4.168.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "sqlite-net-pcl/1.5.231": {
@@ -1193,6 +1282,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "BTProgressHUD >= 1.2.0.6",
       "Fosque >= 1.0.0",
+      "Rg.Plugins.Popup >= 1.1.4.168",
       "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
       "Xamarin.Forms >= 3.1.0.697729",
       "sqlite-net-pcl >= 1.5.231"
@@ -1247,6 +1337,10 @@
           "Xam.Plugins.Forms.ImageCircle": {
             "target": "Package",
             "version": "3.0.0.5"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "1.1.4.168"
           }
         }
       }

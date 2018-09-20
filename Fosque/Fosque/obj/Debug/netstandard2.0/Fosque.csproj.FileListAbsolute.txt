@@ -42,4 +42,5 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/MisPlanes/DetallePlanPage.xaml.g.cs
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/MisPlanes/PlanRutinaEntranamientoPage.xaml.g.cs
-/Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/MisPlanes/PopModalEjerciciosPage.xaml.g.cs
+/Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/MisPlanes/PopupEjercicios.xaml.g.cs
+/Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/MisPlanes/ImageEjerciciosPage.xaml.g.cs

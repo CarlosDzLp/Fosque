@@ -25,6 +25,7 @@ namespace Fosque.iOS
         {
             //UIView statusBar = UIApplication.SharedApplication.ValueForKey(new NSString("statusBar")) as UIView;
             //statusBar.BackgroundColor = UIColor.fro();
+            Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             ImageCircle.Forms.Plugin.iOS.ImageCircleRenderer.Init();
             LoadApplication(new App());

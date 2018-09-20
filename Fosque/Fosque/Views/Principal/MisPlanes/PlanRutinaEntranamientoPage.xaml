@@ -39,6 +39,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <Frame
+                                    HasShadow="false"
                                     Margin="0,0"
                                     BackgroundColor="White"
                                     Padding="20,10"
@@ -55,7 +56,9 @@
                                             <StackLayout
                                                 Grid.Row="0"
                                                 Grid.Column="0"
-                                                Orientation="Vertical">
+                                                Orientation="Vertical"
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="Center">
                                                 <StackLayout
                                                     VerticalOptions="Center"
                                                     HorizontalOptions="Center">

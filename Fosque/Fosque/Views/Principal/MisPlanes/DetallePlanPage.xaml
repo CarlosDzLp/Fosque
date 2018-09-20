@@ -10,9 +10,11 @@
     Title="Detalle Plan">
     <ContentPage.Content>
         <StackLayout
+            BackgroundColor="#EDEDED"
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand">
             <ListView
+                BackgroundColor="#EDEDED"
                 CachingStrategy="RecycleElement"
                 IsPullToRefreshEnabled="true"
                 RefreshCommand="{Binding IsBusyCommand}"
@@ -26,6 +28,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <Frame
+                                HasShadow="false"
                                 Margin="10,5"
                                 BackgroundColor="White"
                                 Padding="10,10"
@@ -35,15 +38,25 @@
                                         BackgroundColor="White">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>        
+                                        </Grid.ColumnDefinitions> 
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
                                         <StackLayout
+                                            Grid.Column="0"
+                                            Grid.Row="0"
                                             Orientation="Vertical">
                                             <Label
+                                                VerticalTextAlignment="Center"
+                                                HorizontalTextAlignment="Center"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center"
                                                 IsVisible="{Binding IsVisibleText}"
                                                 Text="{Binding Plan}"
                                                 FontAttributes="Bold"
                                                 TextColor="Black"/>
                                             <Image
+                                                HeightRequest="100"
                                                 IsVisible="{Binding IsVisibleImage}"
                                                 Source="{Binding Path=ImageConvert}"/>
                                         </StackLayout>

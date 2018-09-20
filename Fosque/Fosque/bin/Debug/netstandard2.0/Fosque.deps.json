@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "70f1455b92252df45801dffafcdfac61e4f02a6e"
+    "signature": "de1e013c92d0a78faecfd0ab0ad931505015f036"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
+          "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Forms": "3.1.0.697729",
           "sqlite-net-pcl": "1.5.231"
@@ -30,6 +31,17 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "Rg.Plugins.Popup/1.1.4.168": {
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "1.1.4.168",
+            "fileVersion": "1.1.4.168"
           }
         }
       },
@@ -127,6 +139,13 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/1.1.4.168": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pARxyFFrnOoCZfRbAiE8v3+8py/sH5SX8NJAjfaydJJO3cm13yNaNw8EelEONJVQY2T0zFhCfZSc4CDjjaSylQ==",
+      "path": "rg.plugins.popup/1.1.4.168",
+      "hashPath": "rg.plugins.popup.1.1.4.168.nupkg.sha512"
     },
     "sqlite-net-pcl/1.5.231": {
       "type": "package",

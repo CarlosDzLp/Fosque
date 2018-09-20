@@ -131,6 +131,32 @@
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png" />
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\cancel.png" />
+    <BundleResource Include="Resources\imagenotfound.png" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\icon%402x.png" />
+    <BundleResource Include="Resources\icon%403x.png" />
+    <BundleResource Include="Resources\config.png" />
+    <BundleResource Include="Resources\membership.png" />
+    <BundleResource Include="Resources\planes.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\reloj.png" />
+    <BundleResource Include="Resources\salir.png" />
+    <BundleResource Include="Resources\turnos.png" />
+    <BundleResource Include="Resources\config%402x.png" />
+    <BundleResource Include="Resources\membership%402x.png" />
+    <BundleResource Include="Resources\planes%402x.png" />
+    <BundleResource Include="Resources\profile%402x.png" />
+    <BundleResource Include="Resources\reloj%402x.png" />
+    <BundleResource Include="Resources\salir%402x.png" />
+    <BundleResource Include="Resources\turnos%402x.png" />
+    <BundleResource Include="Resources\config%403x.png" />
+    <BundleResource Include="Resources\membership%403x.png" />
+    <BundleResource Include="Resources\planes%403x.png" />
+    <BundleResource Include="Resources\profile%403x.png" />
+    <BundleResource Include="Resources\reloj%403x.png" />
+    <BundleResource Include="Resources\salir%403x.png" />
+    <BundleResource Include="Resources\turnos%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -148,6 +174,9 @@
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>3.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>1.1.4.168</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

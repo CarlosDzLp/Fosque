@@ -4,7 +4,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:label="Fosque.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+  <application android:label="Fosque" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Fosque" android:theme="@style/MainTheme" android:name="md5b7201e53dce8d4f3b1e78d71b38011b5.MainActivity" />
     <activity android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5b7201e53dce8d4f3b1e78d71b38011b5.SplashActivity">
       <intent-filter>

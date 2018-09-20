@@ -112,6 +112,8 @@ class MonoPackageManager_Resources {
 		"Fosque.dll",
 		"ImageCircle.Forms.Plugin.dll",
 		"Newtonsoft.Json.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

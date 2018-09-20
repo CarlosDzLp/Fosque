@@ -10,6 +10,9 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.Diagnostics;
 using Fosque.Views.Principal.MisPlanes;
+using Rg.Plugins.Popup.Extensions;
+using System.Linq;
+using System.IO;
 
 namespace Fosque.ViewModels.MasterPrincipal.Plan
 {
@@ -105,8 +108,28 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             {
                 if (SelectedEjercicios != null)
                 {
-                    App.MasterPageDetail.IsPresented = false;
-                    App.MasterPageDetail.Detail.Navigation.PushModalAsync(new PopModalEjerciciosPage(SelectedEjercicios));
+                    if (string.IsNullOrEmpty(SelectedEjercicios.Video))
+                    {
+                        SelectedEjercicios.Video = "imagenotfound.png";
+                        App.MasterPageDetail.IsPresented = false;
+                        App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageEjerciciosPage(SelectedEjercicios), true);
+                    }
+                    else
+                    {
+                        string[] images = { ".png", ".jpg", ".jpeg" };
+                        var result = images.Contains(Path.GetExtension(SelectedEjercicios.Video));
+                        if (result)
+                        {
+                            App.MasterPageDetail.IsPresented = false;
+                            App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageEjerciciosPage(SelectedEjercicios), true);
+                        }
+                        else
+                        {
+                            App.MasterPageDetail.IsPresented = false;
+                            App.MasterPageDetail.Detail.Navigation.PushAsync(new PopupEjercicios(SelectedEjercicios), true);
+                        }
+                    }
+
                 }
             }
             catch(Exception ex)
@@ -119,5 +142,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
         #region Commands
         public ICommand IsBusyCommand { get; set; }
         #endregion
+
     }
 }
