@@ -110,6 +110,7 @@ class MonoPackageManager_Resources {
 		"AndHUD.dll",
 		"FormsViewGroup.dll",
 		"Fosque.dll",
+		"ImageCircle.Forms.Plugin.dll",
 		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Principal.MisPlanes.MiPlanPage"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#EDEDED"
+    Title="Mis Planes">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <ListView
+                CachingStrategy="RecycleElement"
+                IsPullToRefreshEnabled="true"
+                RefreshCommand="{Binding IsBusyCommand}"
+                IsRefreshing="{Binding IsBusy}"
+                SelectedItem="{Binding SelectedPlan}"
+                SelectionMode="Single"
+                HasUnevenRows="true"
+                SeparatorVisibility="None"
+                ItemsSource="{Binding ListPlanes}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                Margin="10,5"
+                                BackgroundColor="White"
+                                Padding="10,10"
+                                CornerRadius="5">
+                                <StackLayout>
+                                    <Grid            
+                                        BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            Grid.Column="0">
+                                            <StackLayout>
+                                                <controls:CircleImage
+                                                    HeightRequest="60"
+                                                    WidthRequest="60"
+                                                    Source="{Binding Path=ImageBase}"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout
+                                            Grid.Column="1"
+                                            BackgroundColor="#004C3F"
+                                            WidthRequest="2">
+                                            
+                                        </StackLayout>
+                                        <StackLayout
+                                            Grid.Row="0"
+                                            Grid.Column="2">
+                                            <StackLayout
+                                                Orientation="Horizontal">
+                                                <Label
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
+                                                    Text="Plan:"/>
+                                                <Label
+                                                    TextColor="Black"
+                                                    Text="{Binding Plan}"/>
+                                            </StackLayout>
+                                            <StackLayout
+                                                Orientation="Horizontal">
+                                                <Label
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
+                                                    Text="Objetivo"/>
+                                                <Label
+                                                    TextColor="Black"
+                                                    Text="{Binding Objetivo}"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout
+                                            Grid.Row="0"
+                                            Grid.Column="3"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End">
+                                            <Image
+                                                Source="next.png"
+                                                HeightRequest="20"
+                                                WidthRequest="20"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

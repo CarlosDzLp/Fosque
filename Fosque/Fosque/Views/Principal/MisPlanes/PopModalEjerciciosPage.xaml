@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Principal.MisPlanes.PopModalEjerciciosPage"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#7F7F7F"
+    Title="Detalle Plan">
+    <ContentPage.Content>
+        <Frame
+            CornerRadius="5"
+            BackgroundColor="White"
+            Margin="20,20"
+            Padding="5"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <StackLayout>
+            <StackLayout
+                Margin="15,15,15,15"
+                VerticalOptions="Center"
+                HorizontalOptions="End">
+                <Image
+                    HeightRequest="20"
+                    WidthRequest="20"
+                    Source="cancel.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding ClosePageCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+                <Grid
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            Grid.Row="0"
+                            Grid.Column="0">
+                        <Image
+                            IsVisible="{Binding IsImage}"
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            Aspect="AspectFill"
+                            Source="{Binding Plan.Video}"/>
+                            <WebView
+                                IsVisible="{Binding IsNotImage}"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand"
+                                Source="{Binding Plan.Video}"/>
+                        </StackLayout>
+                        <StackLayout
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            Margin="20,10"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Orientation="Vertical">
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                TextColor="Black"
+                                Text="{Binding Plan.Ejercicio}"/>
+                            <Label
+                                FontSize="Small"
+                                TextColor="Black"
+                                Text="{Binding Plan.Etapa}"/>
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="Series:"/>
+                                <Label
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="{Binding Plan.Series}"/>
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="Rep:"/>
+                                <Label
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="{Binding Plan.Repeticiones}"/>
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="Peso:"/>
+                                <Label
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="{Binding Plan.Peso}"/>
+                            </StackLayout>
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="Tiempo:"/>
+                                <Label
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="{Binding Plan.Tiempo}"/>
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="Pausa:"/>
+                                <Label
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    Text="{Binding Plan.Pausa}"/>
+                            </StackLayout>
+                        </StackLayout>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

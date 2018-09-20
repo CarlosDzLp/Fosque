@@ -2,9 +2,14 @@
 using Fosque.ViewModels.Base;
 using System.Collections.ObjectModel;
 using Fosque.Models;
-using Fosque.Views.Principal;
 using Fosque.DbLocal;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+using Fosque.Views.Principal.MiPerfil;
+using Fosque.Views.Principal.MisContratos;
+using Fosque.Views.Principal.MisTurnos;
+using Fosque.Views.Principal.MisReservas;
+using Fosque.Views.Principal.MisPlanes;
+using Fosque.Views.Principal.MiConfiguarion;
+
 namespace Fosque.ViewModels.MasterPrincipal
 {
     public class MenuPageViewModel : BindableBase
@@ -47,59 +52,84 @@ namespace Fosque.ViewModels.MasterPrincipal
             {
                 TitleMenu = "Perfil",
                 ImageMenu = "profile.png",
-                NamePage = new PerfilPage()
+                id = 1
             });
             ListMenuLateral.Add(new MenuLateral
             {
                 TitleMenu = "Contratos",
                 ImageMenu = "membership.png",
-                NamePage = new ContratosPage()
+                id = 2
             });
             ListMenuLateral.Add(new MenuLateral
             {
-                TitleMenu = "Reserva de turnos",
+                TitleMenu = "Reservas de turnos",
                 ImageMenu = "turnos.png",
-                NamePage = new TurnosPage()
+                id = 3
             });
             ListMenuLateral.Add(new MenuLateral
             {
                 TitleMenu = "Mis reservas",
                 ImageMenu = "reloj.png",
-                NamePage = new ReservasPage()
+                id = 4
             });
             ListMenuLateral.Add(new MenuLateral
             {
                 TitleMenu = "Mi plan entrenamiento",
                 ImageMenu = "planes.png",
-                NamePage = new PlanPage()
+                id = 5
             });
             ListMenuLateral.Add(new MenuLateral
             {
                 TitleMenu = "Configuracion",
                 ImageMenu = "config.png",
-                NamePage = new ConfiguracionPage()
+                id = 6
             });
             ListMenuLateral.Add(new MenuLateral
             {
                 TitleMenu = "Cerra Sesion",
                 ImageMenu = "salir.png",
-                NamePage = null
+                id = 0
             });
         }
         private void OnSelectedMenu()
         {
             if (ItemSelectedMenu != null)
             {
-                if (ItemSelectedMenu.NamePage == null)
+                if (ItemSelectedMenu.id == 0)
                 {
                     DbContext db = new DbContext();
                     db.DeleteUsuario();
                     App.Current.MainPage = App.GetNavigationPage(new Views.Session.LoginPage());
                 }
-                else
+                else if(ItemSelectedMenu.id == 1)
                 {
                     App.MasterPageDetail.IsPresented = false;
-                    App.MasterPageDetail.Detail.Navigation.PushAsync(ItemSelectedMenu.NamePage);
+                    App.MasterPageDetail.Detail.Navigation.PushAsync(new MiPerfilPage());
+                }
+                else if (ItemSelectedMenu.id == 2)
+                {
+                    App.MasterPageDetail.IsPresented = false;
+                    App.MasterPageDetail.Detail.Navigation.PushAsync(new MisContratosPage());
+                }
+                else if (ItemSelectedMenu.id == 3)
+                {
+                    App.MasterPageDetail.IsPresented = false;
+                    App.MasterPageDetail.Detail.Navigation.PushAsync(new MisTurnosPage());
+                }
+                else if (ItemSelectedMenu.id == 4)
+                {
+                    App.MasterPageDetail.IsPresented = false;
+                    App.MasterPageDetail.Detail.Navigation.PushAsync(new MisReservasPage());
+                }
+                else if (ItemSelectedMenu.id == 5)
+                {
+                    App.MasterPageDetail.IsPresented = false;
+                    App.MasterPageDetail.Detail.Navigation.PushAsync(new MiPlanPage());
+                }
+                else if (ItemSelectedMenu.id == 6)
+                {
+                    App.MasterPageDetail.IsPresented = false;
+                    App.MasterPageDetail.Detail.Navigation.PushAsync(new MiConfiguracionPage());
                 }
             }
         }

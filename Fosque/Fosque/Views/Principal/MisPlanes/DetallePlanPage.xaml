@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Principal.MisPlanes.DetallePlanPage"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#EDEDED"
+    Title="Detalle Plan">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <ListView
+                CachingStrategy="RecycleElement"
+                IsPullToRefreshEnabled="true"
+                RefreshCommand="{Binding IsBusyCommand}"
+                IsRefreshing="{Binding IsBusy}"
+                SelectedItem="{Binding SelectedSubPlan}"
+                SelectionMode="Single"
+                HasUnevenRows="true"
+                SeparatorVisibility="None"
+                ItemsSource="{Binding ListSubPlan}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                Margin="10,5"
+                                BackgroundColor="White"
+                                Padding="10,10"
+                                CornerRadius="5">
+                                <StackLayout>
+                                    <Grid            
+                                        BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>        
+                                        <StackLayout
+                                            Orientation="Vertical">
+                                            <Label
+                                                IsVisible="{Binding IsVisibleText}"
+                                                Text="{Binding Plan}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"/>
+                                            <Image
+                                                IsVisible="{Binding IsVisibleImage}"
+                                                Source="{Binding Path=ImageConvert}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

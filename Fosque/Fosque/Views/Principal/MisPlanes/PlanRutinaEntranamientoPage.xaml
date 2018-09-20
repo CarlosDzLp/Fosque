@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Principal.MisPlanes.PlanRutinaEntranamientoPage"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="#EDEDED"
+    Title="Entrenamientos">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                Padding="10,20">
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    Text="{Binding TypeSubPlan}"/>
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <ListView
+                    CachingStrategy="RecycleElement"
+                    IsPullToRefreshEnabled="true"
+                    RefreshCommand="{Binding IsBusyCommand}"
+                    IsRefreshing="{Binding IsBusy}"
+                    SelectedItem="{Binding SelectedEjercicios}"
+                    SelectionMode="Single"
+                    HasUnevenRows="true"
+                    SeparatorVisibility="None"
+                    ItemsSource="{Binding ListEjercicios}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame
+                                    Margin="0,0"
+                                    BackgroundColor="White"
+                                    Padding="20,10"
+                                    CornerRadius="0">
+                                    <StackLayout>
+                                        <Grid            
+                                            BackgroundColor="White">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>        
+                                            <StackLayout
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Orientation="Vertical">
+                                                <StackLayout
+                                                    VerticalOptions="Center"
+                                                    HorizontalOptions="Center">
+                                                    <controls:CircleImage
+                                                        HeightRequest="60"
+                                                        WidthRequest="60"
+                                                        Source="{Binding Path=ImageConvert}"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            <StackLayout
+                                                Grid.Row="0"
+                                                Grid.Column="1"
+                                                BackgroundColor="#004C3F"
+                                                WidthRequest="2">
+                                            
+                                            </StackLayout>
+                                            <StackLayout
+                                                Grid.Row="0"
+                                                Grid.Column="2"
+                                                Orientation="Vertical">
+                                                <Label
+                                                    FontAttributes="Bold"
+                                                    FontSize="Medium"
+                                                    TextColor="Black"
+                                                    Text="{Binding Ejercicio}"/>
+                                                <Label
+                                                    FontSize="Small"
+                                                    TextColor="Black"
+                                                    Text="{Binding Etapa}"/>
+                                                <StackLayout
+                                                    Orientation="Horizontal">
+                                                    <Label
+                                                        FontAttributes="Bold"
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="Series:"/>
+                                                    <Label
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="{Binding Series}"/>
+                                                    <Label
+                                                        FontAttributes="Bold"
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="Rep:"/>
+                                                    <Label
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="{Binding Repeticiones}"/>
+                                                    <Label
+                                                        FontAttributes="Bold"
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="Peso:"/>
+                                                    <Label
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="{Binding Peso}"/>
+                                                </StackLayout>
+                                                <StackLayout
+                                                    Orientation="Horizontal">
+                                                    <Label
+                                                        FontAttributes="Bold"
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="Tiempo:"/>
+                                                    <Label
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="{Binding Tiempo}"/>
+                                                    <Label
+                                                        FontAttributes="Bold"
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="Pausa:"/>
+                                                    <Label
+                                                        FontSize="Small"
+                                                        TextColor="Black"
+                                                        Text="{Binding Pausa}"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            <StackLayout
+                                                Grid.Row="0"
+                                                Grid.Column="3"
+                                                VerticalOptions="Center"
+                                                HorizontalOptions="End">
+                                                <Image
+                                                    Source="next.png"
+                                                    HeightRequest="20"
+                                                    WidthRequest="20"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,9 +3,7 @@
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/carlosdiaz/Projects/Fosque/Fosque/ViewModels/Session/LoginPageViewModel.cs" relfile="Fosque/ViewModels/Session/LoginPageViewModel.cs" line="94" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.G2R4C17523003416" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />

@@ -61,6 +61,9 @@
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.5.231</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -69,6 +72,7 @@
     <Compile Include="Dependency\Progress.cs" />
     <Compile Include="Dependency\FilePath.cs" />
     <Compile Include="SplashActivity.cs" />
+    <Compile Include="Controls\CustomWebView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -157,6 +161,9 @@
     <AndroidResource Include="Resources\drawable-xhdpi\logosplash.png" />
     <AndroidResource Include="Resources\drawable-hdpi\logosplash.png" />
     <AndroidResource Include="Resources\drawable\logosplash.png" />
+    <AndroidResource Include="Resources\drawable\next.png" />
+    <AndroidResource Include="Resources\drawable\cancel.png" />
+    <AndroidResource Include="Resources\drawable\imagenotfound.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
@@ -164,6 +171,7 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
     <Folder Include="Dependency\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Fosque\Fosque.csproj">

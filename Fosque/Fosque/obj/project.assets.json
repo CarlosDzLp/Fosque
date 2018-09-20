@@ -75,6 +75,18 @@
           "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.446417"
+        },
+        "compile": {
+          "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll": {}
+        }
+      },
       "Xamarin.Forms/3.1.0.697729": {
         "type": "package",
         "compile": {
@@ -347,6 +359,26 @@
         "sqlitepclraw.core.nuspec"
       ]
     },
+    "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+      "sha512": "59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
+      "type": "package",
+      "path": "xam.plugins.forms.imagecircle/3.0.0.5",
+      "files": [
+        "lib/monoandroid71/ImageCircle.Forms.Plugin.dll",
+        "lib/monoandroid71/ImageCircle.Forms.Plugin.xml",
+        "lib/netstandard1.0/ImageCircle.Forms.Plugin.dll",
+        "lib/netstandard1.0/ImageCircle.Forms.Plugin.xml",
+        "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll",
+        "lib/netstandard2.0/ImageCircle.Forms.Plugin.xml",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.dll",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.pri",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.xml",
+        "lib/xamarinios10/ImageCircle.Forms.Plugin.dll",
+        "lib/xamarinios10/ImageCircle.Forms.Plugin.xml",
+        "xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+        "xam.plugins.forms.imagecircle.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.1.0.697729": {
       "sha512": "YlFOM9u8onIRxJwYJ3l+O0wFKqzzrDjDrgnoBr1rct+eaQKU77vFydxvTP+WxYlYzR14hYvyLNC65L84+6ke6w==",
       "type": "package",
@@ -503,6 +535,7 @@
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 11.0.2",
+      "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
       "Xamarin.Forms >= 3.1.0.697729",
       "sqlite-net-pcl >= 1.5.231"
     ]
@@ -514,11 +547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carlosdiaz/Projects/Fosque/Fosque/Fosque.csproj",
+      "projectUniqueName": "/Users/carlosdiaz/Fosque/Fosque/Fosque/Fosque.csproj",
       "projectName": "Fosque",
-      "projectPath": "/Users/carlosdiaz/Projects/Fosque/Fosque/Fosque.csproj",
+      "projectPath": "/Users/carlosdiaz/Fosque/Fosque/Fosque/Fosque.csproj",
       "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-      "outputPath": "/Users/carlosdiaz/Projects/Fosque/Fosque/obj",
+      "outputPath": "/Users/carlosdiaz/Fosque/Fosque/Fosque/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -557,6 +590,10 @@
           "sqlite-net-pcl": {
             "target": "Package",
             "version": "1.5.231"
+          },
+          "Xam.Plugins.Forms.ImageCircle": {
+            "target": "Package",
+            "version": "3.0.0.5"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

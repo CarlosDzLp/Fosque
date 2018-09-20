@@ -6,6 +6,7 @@ using Fosque.Dependency;
 using Fosque.Services;
 using Fosque.Models;
 using Fosque.DbLocal;
+using Fosque.Helpers;
 
 namespace Fosque.ViewModels.Session
 {
@@ -90,7 +91,7 @@ namespace Fosque.ViewModels.Session
                         IsContrasena = false;
                         DependencyService.Get<IProgressDialog>().ProgressDialogShow();
                         var query = $"pnl/spapp/validasocio?client=8eb67d8619543d947ad8ab7f9f9597ecca84fb7d&email={Usuario}&dni={Documento}&pass={Password}";
-                        var response = await client.GetListAllWithParam<UsuarioModel>("http://controlacceso.socioplus.com.ar", query);
+                        var response = await client.GetListAllWithParam<UsuarioModel>(Configuration.BaseUrl, query);
                         if (response != null)
                         {
                             if (response.StatusCode == "200")
