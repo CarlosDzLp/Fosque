@@ -110,8 +110,9 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
                 {
                     if (string.IsNullOrEmpty(SelectedEjercicios.Photo) && string.IsNullOrEmpty(selectedEjercicios.Photo))
                     {
+                        SelectedEjercicios.Video = "imagenotfound.png";
                         App.MasterPageDetail.IsPresented = false;
-                        App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageEjerciciosPage(SelectedEjercicios), true);
+                        App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageGifPage(SelectedEjercicios), true);
                     }
                     else
                     {
