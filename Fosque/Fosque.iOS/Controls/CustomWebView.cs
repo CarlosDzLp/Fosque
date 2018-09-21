@@ -13,8 +13,9 @@ namespace Fosque.iOS.Controls
         {
             base.OnElementChanged(e);
             var view = (UIWebView)NativeView;
-            view.ScrollView.ScrollEnabled = false;
-            view.ScalesPageToFit = false;
+            view.SizeToFit();
+            view.ScrollView.ScrollEnabled = true;
+            view.ScalesPageToFit = true;
         }
     }
 }

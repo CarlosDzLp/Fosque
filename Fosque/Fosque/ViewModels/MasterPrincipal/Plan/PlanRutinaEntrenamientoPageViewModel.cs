@@ -108,28 +108,36 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             {
                 if (SelectedEjercicios != null)
                 {
-                    if (string.IsNullOrEmpty(SelectedEjercicios.Video))
+                    if (string.IsNullOrEmpty(SelectedEjercicios.Photo) && string.IsNullOrEmpty(selectedEjercicios.Photo))
                     {
-                        SelectedEjercicios.Video = "imagenotfound.png";
                         App.MasterPageDetail.IsPresented = false;
                         App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageEjerciciosPage(SelectedEjercicios), true);
                     }
                     else
                     {
-                        string[] images = { ".png", ".jpg", ".jpeg" };
-                        var result = images.Contains(Path.GetExtension(SelectedEjercicios.Video));
-                        if (result)
+                        if (!string.IsNullOrEmpty(SelectedEjercicios.Video))
                         {
-                            App.MasterPageDetail.IsPresented = false;
-                            App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageEjerciciosPage(SelectedEjercicios), true);
+                            string[] images = { ".gif" };
+
+                            if (images.Contains(Path.GetExtension(SelectedEjercicios.Video)))
+                            {
+                                App.MasterPageDetail.IsPresented = false;
+                                App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageGifPage(SelectedEjercicios), true);
+                            }
+                            else
+                            {
+                                App.MasterPageDetail.IsPresented = false;
+                                App.MasterPageDetail.Detail.Navigation.PushAsync(new PopupEjercicios(SelectedEjercicios), true);
+                            }
                         }
                         else
                         {
+                            var image = ImageConvert.ConvertToBase(SelectedEjercicios.Photo);
+                            SelectedEjercicios.ImageConvert = image;
                             App.MasterPageDetail.IsPresented = false;
-                            App.MasterPageDetail.Detail.Navigation.PushAsync(new PopupEjercicios(SelectedEjercicios), true);
+                            App.MasterPageDetail.Detail.Navigation.PushAsync(new ImageEjerciciosPage(SelectedEjercicios), true);
                         }
                     }
-
                 }
             }
             catch(Exception ex)

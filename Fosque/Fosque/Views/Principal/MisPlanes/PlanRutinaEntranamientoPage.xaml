@@ -81,40 +81,40 @@
                                                 Orientation="Vertical">
                                                 <Label
                                                     FontAttributes="Bold"
-                                                    FontSize="Medium"
+                                                    FontSize="13"
                                                     TextColor="Black"
                                                     Text="{Binding Ejercicio}"/>
                                                 <Label
-                                                    FontSize="Small"
+                                                    FontSize="13"
                                                     TextColor="Black"
                                                     Text="{Binding Etapa}"/>
                                                 <StackLayout
                                                     Orientation="Horizontal">
                                                     <Label
                                                         FontAttributes="Bold"
-                                                        FontSize="Small"
+                                                        FontSize="12"
                                                         TextColor="Black"
                                                         Text="Series:"/>
                                                     <Label
-                                                        FontSize="Small"
+                                                        FontSize="11"
                                                         TextColor="Black"
                                                         Text="{Binding Series}"/>
                                                     <Label
                                                         FontAttributes="Bold"
-                                                        FontSize="Small"
+                                                        FontSize="12"
                                                         TextColor="Black"
                                                         Text="Rep:"/>
                                                     <Label
-                                                        FontSize="Small"
+                                                        FontSize="11"
                                                         TextColor="Black"
                                                         Text="{Binding Repeticiones}"/>
                                                     <Label
                                                         FontAttributes="Bold"
-                                                        FontSize="Small"
+                                                        FontSize="12"
                                                         TextColor="Black"
                                                         Text="Peso:"/>
                                                     <Label
-                                                        FontSize="Small"
+                                                        FontSize="11"
                                                         TextColor="Black"
                                                         Text="{Binding Peso}"/>
                                                 </StackLayout>
@@ -122,20 +122,20 @@
                                                     Orientation="Horizontal">
                                                     <Label
                                                         FontAttributes="Bold"
-                                                        FontSize="Small"
+                                                        FontSize="12"
                                                         TextColor="Black"
                                                         Text="Tiempo:"/>
                                                     <Label
-                                                        FontSize="Small"
+                                                        FontSize="11"
                                                         TextColor="Black"
                                                         Text="{Binding Tiempo}"/>
                                                     <Label
                                                         FontAttributes="Bold"
-                                                        FontSize="Small"
+                                                        FontSize="12"
                                                         TextColor="Black"
                                                         Text="Pausa:"/>
                                                     <Label
-                                                        FontSize="Small"
+                                                        FontSize="11"
                                                         TextColor="Black"
                                                         Text="{Binding Pausa}"/>
                                                 </StackLayout>

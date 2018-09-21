@@ -37,3 +37,12 @@ System.Reflection.Extensions
 ImageCircle.Forms.Plugin
 Rg.Plugins.Popup
 Rg.Plugins.Popup.Droid
+FFImageLoading
+FFImageLoading.Forms
+FFImageLoading.Forms.Platform
+FFImageLoading.Platform
+FFImageLoading.Svg.Forms
+FFImageLoading.Svg.Platform
+FFImageLoading.Transformations
+SkiaSharp
+System.Resources.ResourceManager

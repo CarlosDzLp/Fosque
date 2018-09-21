@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 using Android.Webkit;
+using FFImageLoading.Forms;
+using FFImageLoading.Forms.Droid;
 
 namespace Fosque.Droid
 {
@@ -24,6 +26,8 @@ namespace Fosque.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+            //CachedImageRenderer.Init(true);
             ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer.Init();
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             LoadApplication(new App());

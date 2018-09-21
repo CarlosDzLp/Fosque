@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Fosque.Views.Principal.MisPlanes.ImageGifPage"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="White"
+    Title="Ejercicos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout
+                    Margin="20,10"
+                    Padding="10,0"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <ff:CachedImage
+                        ErrorPlaceholder="Error al cargar la imagen"
+                        LoadingPlaceholder="Cargando.."
+                        LoadingPriority="Highest"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="{Binding Plan.Video}"/>
+                </StackLayout>
+                <StackLayout
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="20,10"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Orientation="Vertical">
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        TextColor="Black"
+                        Text="{Binding Plan.Ejercicio}"/>
+                    <Label
+                        FontSize="Medium"
+                        TextColor="Black"
+                        Text="{Binding Plan.Etapa}"/>
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="Series:"/>
+                        <Label
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="{Binding Plan.Series}"/>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="Rep:"/>
+                        <Label
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="{Binding Plan.Repeticiones}"/>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="Peso:"/>
+                        <Label
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="{Binding Plan.Peso}"/>
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="Tiempo:"/>
+                        <Label
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="{Binding Plan.Tiempo}"/>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="Pausa:"/>
+                        <Label
+                            FontSize="Medium"
+                            TextColor="Black"
+                            Text="{Binding Plan.Pausa}"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

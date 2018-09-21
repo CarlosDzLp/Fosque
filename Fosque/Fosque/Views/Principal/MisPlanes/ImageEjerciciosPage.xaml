@@ -24,7 +24,7 @@
                     <Image
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand"
-                        Source="{Binding Plan.Video}"/>
+                        Source="{Binding Plan.ImageConvert}"/>
                 </StackLayout>
                 <StackLayout
                     VerticalOptions="FillAndExpand"
