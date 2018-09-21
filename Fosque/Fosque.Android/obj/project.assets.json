@@ -1414,6 +1414,11 @@
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
       "Xamarin.Android.Support.v7.CardView >= 27.0.2.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2.1",
+      "Xamarin.FFImageLoading >= 2.4.3.840",
+      "Xamarin.FFImageLoading.Forms >= 2.4.3.840",
+      "Xamarin.FFImageLoading.Svg >= 2.4.3.840",
+      "Xamarin.FFImageLoading.Svg.Forms >= 2.4.3.840",
+      "Xamarin.FFImageLoading.Transformations >= 2.4.3.840",
       "Xamarin.Forms >= 3.1.0.697729",
       "sqlite-net-pcl >= 1.5.231"
     ]
@@ -1447,6 +1452,12 @@
             }
           }
         }
+      }
+    },
+    "dependencies": {
+      "Xamarin.FFImageLoading.Forms": {
+        "target": "Package",
+        "version": "[2.4.3.840, )"
       }
     },
     "frameworks": {
@@ -1491,6 +1502,22 @@
           "Rg.Plugins.Popup": {
             "target": "Package",
             "version": "1.1.4.168"
+          },
+          "Xamarin.FFImageLoading.Svg": {
+            "target": "Package",
+            "version": "2.4.3.840"
+          },
+          "Xamarin.FFImageLoading.Svg.Forms": {
+            "target": "Package",
+            "version": "2.4.3.840"
+          },
+          "Xamarin.FFImageLoading.Transformations": {
+            "target": "Package",
+            "version": "2.4.3.840"
+          },
+          "Xamarin.FFImageLoading": {
+            "target": "Package",
+            "version": "2.4.3.840"
           }
         }
       }

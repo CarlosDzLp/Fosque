@@ -3,9 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Fosque.Views.Principal.MisPlanes.ImageGifPage"
-    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-    xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     BackgroundColor="White"
@@ -24,10 +22,7 @@
                     Grid.Column="0"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
-                    <ff:CachedImage
-                        ErrorPlaceholder="Error al cargar la imagen"
-                        LoadingPlaceholder="Cargando.."
-                        LoadingPriority="Highest"
+                    <ffimage:CachedImage
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand"
                         Source="{Binding Plan.Video}"/>

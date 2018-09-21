@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Fosque.Models;
 using Fosque.ViewModels.MasterPrincipal.Plan;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace Fosque.Views.Principal.MisPlanes
 {
@@ -10,8 +11,15 @@ namespace Fosque.Views.Principal.MisPlanes
     {
         public ImageGifPage(PlanEntrenamientoEjercicios plan)
         {
-            InitializeComponent();
-            this.BindingContext= new PopModalEjerciciosPageViewModel(plan);
+            try
+            {
+                InitializeComponent();
+                this.BindingContext = new PopModalEjerciciosPageViewModel(plan);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
     }
 }
