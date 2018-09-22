@@ -1,22 +1,18 @@
 ﻿<Properties StartupConfiguration="{F380C90B-01A8-413F-93EB-D0C155158D31}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9C3418D1-BEAC-4932-ABE6-2D8D9C450D65" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/Views/Principal/MisPlanes/ImageGifPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="Fosque/Views/Principal/MisPlanes/ImageGifPage.xaml" Line="6" Column="18" />
-      <File FileName="Fosque/Views/Principal/MisPlanes/ImageGifPage.xaml.cs" Line="21" Column="45" />
-      <File FileName="Fosque/ViewModels/MasterPrincipal/Plan/PopModalEjerciciosPageViewModel.cs" Line="16" Column="49" />
-      <File FileName="Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Fosque.iOS/AppDelegate.cs" Line="30" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PopModalEjerciciosPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PopModalEjerciciosPageViewModel.cs" line="36" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/Views/Principal/MisPlanes/ImageGifPage.xaml.cs" relfile="Fosque/Views/Principal/MisPlanes/ImageGifPage.xaml.cs" line="20" column="1" />
       <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" line="145" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PopModalEjerciciosPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PopModalEjerciciosPageViewModel.cs" line="41" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.G2R4C17523003416" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MultiItemStartupConfigurations />
 </Properties>

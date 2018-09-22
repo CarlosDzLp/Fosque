@@ -46,17 +46,6 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Threading.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Globalization.dll
-/Users/carlosdiaz/.nuget/packages/xamarin.ffimageloading.forms/2.4.3.840/lib/Xamarin.iOS10/FFImageLoading.Forms.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Resources.ResourceManager.dll
-/Users/carlosdiaz/.nuget/packages/xamarin.ffimageloading/2.4.3.840/lib/Xamarin.iOS10/FFImageLoading.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.IO.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Text.Encoding.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Text.RegularExpressions.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.Net.Primitives.dll
-/Users/carlosdiaz/.nuget/packages/xamarin.ffimageloading.forms/2.4.3.840/lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll
-/Users/carlosdiaz/.nuget/packages/xamarin.ffimageloading/2.4.3.840/lib/Xamarin.iOS10/FFImageLoading.Platform.dll
-/Users/carlosdiaz/.nuget/packages/webp.touch/1.0.8/lib/Xamarin.iOS10/WebP.Touch.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/mono/Xamarin.iOS/Facades/System.ObjectModel.dll
 /Users/carlosdiaz/.nuget/packages/xam.plugins.forms.imagecircle/3.0.0.5/lib/xamarinios10/ImageCircle.Forms.Plugin.dll
 /Users/carlosdiaz/.nuget/packages/rg.plugins.popup/1.1.4.168/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
 /Users/carlosdiaz/.nuget/packages/rg.plugins.popup/1.1.4.168/lib/Xamarin.IOS/Rg.Plugins.Popup.dll

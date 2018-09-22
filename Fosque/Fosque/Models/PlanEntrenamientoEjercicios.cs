@@ -44,5 +44,12 @@ namespace Fosque.Models
 
         [SQLite.Ignore, JsonIgnore]
         public ImageSource ImageConvert { get; set; }
+
+
+        [SQLite.Ignore, JsonIgnore]
+        public int Alto { get; set; }
+
+        [SQLite.Ignore, JsonIgnore]
+        public int Ancho { get; set; }
     }
 }

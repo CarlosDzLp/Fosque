@@ -9,23 +9,26 @@
     BackgroundColor="White"
     Title="Ejercicos">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView
+            Orientation="Vertical"
+            VerticalScrollBarVisibility="Never">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <StackLayout
-                    Margin="20,10"
-                    Padding="10,0"
+                    HeightRequest="{Binding Plan.Alto}"
+                    WidthRequest="{Binding Plan.Ancho}"
                     Grid.Row="0"
                     Grid.Column="0"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
-                    <ffimage:CachedImage
+                    <WebView
+                        x:Name="WebViewGif"
                         VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        Source="{Binding Plan.Video}"/>
+                        HorizontalOptions="FillAndExpand">
+                    </WebView>
                 </StackLayout>
                 <StackLayout
                     VerticalOptions="FillAndExpand"
@@ -96,6 +99,6 @@
                     </StackLayout>
                 </StackLayout>
             </Grid>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

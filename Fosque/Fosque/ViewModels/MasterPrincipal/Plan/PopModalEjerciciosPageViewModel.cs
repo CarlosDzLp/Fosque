@@ -31,6 +31,11 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             {
                 Plan = new PlanEntrenamientoEjercicios();
                 Plan = plan;
+
+                var division = App.Alto / 3;
+                var altoformal = division + division;
+                Plan.Ancho = App.Ancho;
+                Plan.Alto = altoformal;
             }
             catch(Exception ex)
             {

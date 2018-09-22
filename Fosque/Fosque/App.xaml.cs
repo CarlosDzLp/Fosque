@@ -11,6 +11,8 @@ namespace Fosque
 {
     public partial class App : Application
     {
+        public static int Alto { get; set; }
+        public static int Ancho { get; set; }
         DbContext db = new DbContext();
         public static MasterPage MasterPageDetail { get; set; }
         public App()

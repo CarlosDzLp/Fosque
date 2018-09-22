@@ -8,7 +8,9 @@
     Title="Ejercicios"
     BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView
+            Orientation="Vertical"
+            VerticalScrollBarVisibility="Never">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="2*"/>
@@ -95,6 +97,6 @@
                     </StackLayout>
                 </StackLayout>
             </Grid>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

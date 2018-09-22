@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using CoreGraphics;
+using Xamarin.Forms;
 
 namespace Fosque.iOS
 {
@@ -27,10 +28,11 @@ namespace Fosque.iOS
             //statusBar.BackgroundColor = UIColor.fro();
             Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             ImageCircle.Forms.Plugin.iOS.ImageCircleRenderer.Init();
             LoadApplication(new App());
-
+            App.Alto = (int)UIScreen.MainScreen.Bounds.Height;
+            App.Ancho = (int)UIScreen.MainScreen.Bounds.Width;
+                //new Size(UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
             return base.FinishedLaunching(app, options);
         }
     }

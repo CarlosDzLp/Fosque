@@ -14,7 +14,11 @@ namespace Fosque.Views.Principal.MisPlanes
             try
             {
                 InitializeComponent();
+
                 this.BindingContext = new PopModalEjerciciosPageViewModel(plan);
+                var html = new HtmlWebViewSource();
+                html.Html = Helpers.HtmlHelper.getHtml(plan.Video, App.Ancho, App.Alto);
+                WebViewGif.Source = html;
             }
             catch(Exception ex)
             {

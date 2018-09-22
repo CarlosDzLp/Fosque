@@ -31,7 +31,7 @@
                                 HasShadow="false"
                                 Margin="10,5"
                                 BackgroundColor="White"
-                                Padding="10,10"
+                                Padding="10,5"
                                 CornerRadius="5">
                                 <StackLayout>
                                     <Grid            
