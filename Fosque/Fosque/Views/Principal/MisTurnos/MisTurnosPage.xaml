@@ -6,7 +6,83 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     BackgroundColor="White"
-    Title="Turnos">
+    Title="Reservas de turnos">
     <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                Margin="30,20">
+                <Label
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="HORARIOS DISPONIBLES"/>
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <ListView
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#EDEDED"
+                    CachingStrategy="RecycleElement"
+                    IsPullToRefreshEnabled="true"
+                    RefreshCommand="{Binding IsBusyCommand}"
+                    IsRefreshing="{Binding IsBusy}"
+                    SelectedItem="{Binding SelectedReserva}"
+                    SelectionMode="Single"
+                    HasUnevenRows="true"
+                    SeparatorVisibility="None"
+                    ItemsSource="{Binding ListReservas}">
+                    <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                HasShadow="false"
+                                Margin="10,5"
+                                BackgroundColor="White"
+                                Padding="10,15"
+                                CornerRadius="5">
+                                <StackLayout>
+                                    <Grid            
+                                        BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            Grid.Column="0">
+                                            <Label
+                                                TextColor="Maroon"
+                                                Text="{Binding Inicio}"/>
+                                        </StackLayout>
+                                        <StackLayout
+                                            Grid.Column="1"
+                                            BackgroundColor="#004C3F"
+                                            WidthRequest="2">
+                                            
+                                        </StackLayout>
+                                        <StackLayout
+                                            Grid.Column="2">
+                                            <Label
+                                                TextColor="Black"
+                                                Text="{Binding DescripcionConcepto}"/>
+                                            <Label
+                                                TextColor="Black"
+                                                Text="{Binding Sala}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>   
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

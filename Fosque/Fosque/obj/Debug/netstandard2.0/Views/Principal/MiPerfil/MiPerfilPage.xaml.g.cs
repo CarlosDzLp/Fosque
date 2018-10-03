@@ -16,7 +16,7 @@ namespace Fosque.Views.Principal.MiPerfil {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Principal/MiPerfil/MiPerfilPage.xaml")]
     public partial class MiPerfilPage : global::Xamarin.Forms.ContentPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MiPerfilPage));
         }

@@ -24,13 +24,16 @@ namespace Fosque.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
             //CachedImageRenderer.Init(true);
             ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer.Init();
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 
             App.Ancho = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
             App.Alto = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
             LoadApplication(new App());
         }
+
     }
 }

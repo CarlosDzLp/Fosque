@@ -29,6 +29,7 @@ namespace Fosque.iOS
             Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             ImageCircle.Forms.Plugin.iOS.ImageCircleRenderer.Init();
+            ZXing.Net.Mobile.Forms.iOS.Platform.Init();
             LoadApplication(new App());
             App.Alto = (int)UIScreen.MainScreen.Bounds.Height;
             App.Ancho = (int)UIScreen.MainScreen.Bounds.Width;

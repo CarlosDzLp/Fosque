@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -15,12 +16,13 @@ namespace Fosque.Services
             {
                 if(string.IsNullOrEmpty(where))
                 {
-                    Console.WriteLine("Vacio el where");
+                    Console.WriteLine("where empty");
                     return default(T);
                 }
                 string url = where;
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(BaseUrl);
+
                 var response = await client.GetAsync(url);
                 if (response.StatusCode == HttpStatusCode.OK)
                 {

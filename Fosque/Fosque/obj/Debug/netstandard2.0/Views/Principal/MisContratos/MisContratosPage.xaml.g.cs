@@ -16,7 +16,7 @@ namespace Fosque.Views.Principal.MisContratos {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Principal/MisContratos/MisContratosPage.xaml")]
     public partial class MisContratosPage : global::Xamarin.Forms.ContentPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MisContratosPage));
         }

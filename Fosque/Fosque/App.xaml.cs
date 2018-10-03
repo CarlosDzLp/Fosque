@@ -5,6 +5,7 @@ using Fosque.Views.Session;
 using Fosque.Views.Principal;
 using System.Diagnostics;
 using Fosque.DbLocal;
+using Com.OneSignal;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Fosque
@@ -14,6 +15,8 @@ namespace Fosque
         public static int Alto { get; set; }
         public static int Ancho { get; set; }
         DbContext db = new DbContext();
+
+        public static string ColorApp { get; set; }
         public static MasterPage MasterPageDetail { get; set; }
         public App()
         {
@@ -28,6 +31,7 @@ namespace Fosque
             {
                 MainPage = GetNavigationPage(new LoginPage());
             }
+            OneSignal.Current.StartInit("686c5ffc-56c9-4485-b6b1-9ade7c69264f").EndInit();
         }
         public static Page GetNavigationPage(Page page)
         {

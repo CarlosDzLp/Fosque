@@ -132,7 +132,7 @@ namespace Fosque.ViewModels.Session
                 IsContrasena = false;
             }
         }
-        private async void ForgotPasswordCommandExecuted()
+        private void ForgotPasswordCommandExecuted()
         {
 
         }

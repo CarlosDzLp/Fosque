@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using Xamarin.Forms;
 namespace Fosque.Helpers
 {
@@ -10,11 +11,9 @@ namespace Fosque.Helpers
             ImageSource image = null;
             if (!string.IsNullOrEmpty(file))
             {
-                string baseIamge = "data:image/jpeg;base64,";
-                int Lengthfile = baseIamge.Length;
-                string stringfile = file.Substring(Lengthfile);
+                string[] lines = Regex.Split(file, "base64,");
                 var result = ImageSource.FromStream(
-                    () => new MemoryStream(Convert.FromBase64String(stringfile)));
+                    () => new MemoryStream(Convert.FromBase64String(lines[1])));
                 image = result;
             }
             return image;

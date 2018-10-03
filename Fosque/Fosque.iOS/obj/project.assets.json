@@ -11,6 +11,22 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -82,6 +98,15 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/4.0.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
         "type": "package",
         "dependencies": {
@@ -94,7 +119,7 @@
           "lib/xamarinios10/ImageCircle.Forms.Plugin.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.697729": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -217,14 +242,46 @@
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.122203",
+          "ZXing.Net.Mobile": "2.4.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        }
+      },
       "Fosque/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.2.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
+          "Xam.Plugin.DeviceInfo": "4.0.0.13",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
-          "Xamarin.Forms": "3.1.0.697729",
+          "Xamarin.Forms": "3.2.0.839982",
+          "ZXing.Net.Mobile": "2.4.1",
+          "ZXing.Net.Mobile.Forms": "2.4.1",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -245,6 +302,22 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -316,6 +389,15 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/4.0.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
         "type": "package",
         "dependencies": {
@@ -328,7 +410,7 @@
           "lib/xamarinios10/ImageCircle.Forms.Plugin.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.697729": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -451,14 +533,46 @@
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.122203",
+          "ZXing.Net.Mobile": "2.4.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        }
+      },
       "Fosque/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.2.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
+          "Xam.Plugin.DeviceInfo": "4.0.0.13",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
-          "Xamarin.Forms": "3.1.0.697729",
+          "Xamarin.Forms": "3.2.0.839982",
+          "ZXing.Net.Mobile": "2.4.1",
+          "ZXing.Net.Mobile.Forms": "2.4.1",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -479,6 +593,22 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -550,6 +680,15 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/4.0.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
         "type": "package",
         "dependencies": {
@@ -562,7 +701,7 @@
           "lib/xamarinios10/ImageCircle.Forms.Plugin.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.697729": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -685,14 +824,46 @@
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.122203",
+          "ZXing.Net.Mobile": "2.4.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        }
+      },
       "Fosque/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.2.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
+          "Xam.Plugin.DeviceInfo": "4.0.0.13",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
-          "Xamarin.Forms": "3.1.0.697729",
+          "Xamarin.Forms": "3.2.0.839982",
+          "ZXing.Net.Mobile": "2.4.1",
+          "ZXing.Net.Mobile.Forms": "2.4.1",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -713,6 +884,22 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -784,6 +971,15 @@
           "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
         }
       },
+      "Xam.Plugin.DeviceInfo/4.0.0.13": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.DeviceInfo.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
         "type": "package",
         "dependencies": {
@@ -796,7 +992,7 @@
           "lib/xamarinios10/ImageCircle.Forms.Plugin.dll": {}
         }
       },
-      "Xamarin.Forms/3.1.0.697729": {
+      "Xamarin.Forms/3.2.0.839982": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -919,14 +1115,46 @@
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
       },
+      "ZXing.Net.Mobile/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/Xamarin.iOS10/ZXingNetMobile.dll": {},
+          "lib/Xamarin.iOS10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.122203",
+          "ZXing.Net.Mobile": "2.4.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll": {},
+          "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll": {}
+        }
+      },
       "Fosque/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.2.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
+          "Xam.Plugin.DeviceInfo": "4.0.0.13",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
-          "Xamarin.Forms": "3.1.0.697729",
+          "Xamarin.Forms": "3.2.0.839982",
+          "ZXing.Net.Mobile": "2.4.1",
+          "ZXing.Net.Mobile.Forms": "2.4.1",
           "sqlite-net-pcl": "1.5.231"
         },
         "compile": {
@@ -948,6 +1176,32 @@
         "btprogresshud.1.2.0.6.nupkg.sha512",
         "btprogresshud.nuspec",
         "lib/Xamarin.iOS10/BTProgressHUD.dll"
+      ]
+    },
+    "Com.OneSignal/3.2.1": {
+      "sha512": "FWPDKJaq7CEbvybeGezdI9sc1A923GSQvFUsB7kJe7Ys9spOHc1gfat+fKGJleYpMy/8ziw/EnWdh26JeP/4OQ==",
+      "type": "package",
+      "path": "com.onesignal/3.2.1",
+      "files": [
+        ".signature.p7s",
+        "com.onesignal.3.2.1.nupkg.sha512",
+        "com.onesignal.nuspec",
+        "lib/MonoAndroid10/Com.OneSignal.Abstractions.dll",
+        "lib/MonoAndroid10/Com.OneSignal.Abstractions.pdb",
+        "lib/MonoAndroid10/Com.OneSignal.dll",
+        "lib/MonoAndroid10/Com.OneSignal.pdb",
+        "lib/MonoAndroid10/OneSignal.Android.Binding.dll",
+        "lib/MonoAndroid10/OneSignal.Android.Binding.pdb",
+        "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll",
+        "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Com.OneSignal.dll",
+        "lib/Xamarin.iOS10/Com.OneSignal.pdb",
+        "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll",
+        "lib/Xamarin.iOS10/OneSignal.iOS.Binding.pdb",
+        "lib/netstandard1.0/Com.OneSignal.Abstractions.dll",
+        "lib/netstandard1.0/Com.OneSignal.Abstractions.pdb",
+        "lib/netstandard1.0/Com.OneSignal.dll",
+        "lib/netstandard1.0/Com.OneSignal.pdb"
       ]
     },
     "Newtonsoft.Json/11.0.2": {
@@ -1101,6 +1355,27 @@
         "sqlitepclraw.provider.sqlite3.ios_unified.nuspec"
       ]
     },
+    "Xam.Plugin.DeviceInfo/4.0.0.13": {
+      "sha512": "V0Xy0ewPMapt/pPtXKkFlWxfMg1Pgr+J0zLpwltitxK2eBX/QdixCUUBgeMQRxJQJGQNOAEe6Apysjdsl3IQvw==",
+      "type": "package",
+      "path": "xam.plugin.deviceinfo/4.0.0.13",
+      "files": [
+        "lib/monoandroid71/Plugin.DeviceInfo.dll",
+        "lib/net45/Plugin.DeviceInfo.dll",
+        "lib/netstandard1.0/Plugin.DeviceInfo.dll",
+        "lib/netstandard2.0/Plugin.DeviceInfo.dll",
+        "lib/tizen40/Plugin.DeviceInfo.dll",
+        "lib/uap10.0.15063/Plugin.DeviceInfo.dll",
+        "lib/uap10.0.15063/Plugin.DeviceInfo.pri",
+        "lib/xamarinios10/Plugin.DeviceInfo.dll",
+        "lib/xamarinmac20/Plugin.DeviceInfo.dll",
+        "lib/xamarintvos10/Plugin.DeviceInfo.dll",
+        "lib/xamarinwatchos10/Plugin.DeviceInfo.dll",
+        "readme.txt",
+        "xam.plugin.deviceinfo.4.0.0.13.nupkg.sha512",
+        "xam.plugin.deviceinfo.nuspec"
+      ]
+    },
     "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
       "sha512": "59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
       "type": "package",
@@ -1121,10 +1396,10 @@
         "xam.plugins.forms.imagecircle.nuspec"
       ]
     },
-    "Xamarin.Forms/3.1.0.697729": {
-      "sha512": "YlFOM9u8onIRxJwYJ3l+O0wFKqzzrDjDrgnoBr1rct+eaQKU77vFydxvTP+WxYlYzR14hYvyLNC65L84+6ke6w==",
+    "Xamarin.Forms/3.2.0.839982": {
+      "sha512": "BtiTMpmTqkzPPlGvQEVrO51kC1e/vieOaGHB+bKUULER0ruf2EQ92zVRwuvLop60g0WQQJ0Arj45TNCu6qCINQ==",
       "type": "package",
-      "path": "xamarin.forms/3.1.0.697729",
+      "path": "xamarin.forms/3.2.0.839982",
       "files": [
         ".signature.p7s",
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
@@ -1268,8 +1543,48 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.1.0.697729.nupkg.sha512",
+        "xamarin.forms.3.2.0.839982.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "ZXing.Net.Mobile/2.4.1": {
+      "sha512": "iCL2WcqOyUnC1iFFdzXijk0EXfoLMDqW88MyhoTZigSyhJZM2C5hKgSZVyfx9E35tgkde/IZwHkk8cVDnbQlYg==",
+      "type": "package",
+      "path": "zxing.net.mobile/2.4.1",
+      "files": [
+        "lib/MonoAndroid71/ZXing.Net.Mobile.Core.dll",
+        "lib/MonoAndroid71/ZXingNetMobile.dll",
+        "lib/MonoAndroid71/zxing.portable.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Core.dll",
+        "lib/UAP10/ZXingNetMobile.dll",
+        "lib/UAP10/ZXingNetMobile.pri",
+        "lib/UAP10/ZXingNetMobile/ZXingNetMobile.xr.xml",
+        "lib/UAP10/zxing.portable.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll",
+        "lib/Xamarin.iOS10/ZXingNetMobile.dll",
+        "lib/Xamarin.iOS10/zxing.portable.dll",
+        "lib/netstandard1.0/ZXing.Net.Mobile.Core.dll",
+        "lib/netstandard1.0/ZXingNetMobile.dll",
+        "lib/netstandard1.0/zxing.portable.dll",
+        "zxing.net.mobile.2.4.1.nupkg.sha512",
+        "zxing.net.mobile.nuspec"
+      ]
+    },
+    "ZXing.Net.Mobile.Forms/2.4.1": {
+      "sha512": "7z+MfL8TbfE36s1GGvrnlkhLUOV5dgdn1gYhUb3GU2W6YXzpfF39k6EqkmFsyNm1O07evTaKFgh7UTOqcWub3g==",
+      "type": "package",
+      "path": "zxing.net.mobile.forms/2.4.1",
+      "files": [
+        "lib/MonoAndroid71/ZXing.Net.Mobile.Forms.Android.dll",
+        "lib/MonoAndroid71/ZXing.Net.Mobile.Forms.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.pri",
+        "lib/UAP10/ZXing.Net.Mobile.Forms.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll",
+        "lib/netstandard1.0/ZXing.Net.Mobile.Forms.dll",
+        "zxing.net.mobile.forms.2.4.1.nupkg.sha512",
+        "zxing.net.mobile.forms.nuspec"
       ]
     },
     "Fosque/1.0.0": {
@@ -1283,8 +1598,11 @@
       "BTProgressHUD >= 1.2.0.6",
       "Fosque >= 1.0.0",
       "Rg.Plugins.Popup >= 1.1.4.168",
+      "Xam.Plugin.DeviceInfo >= 4.0.0.13",
       "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
-      "Xamarin.Forms >= 3.1.0.697729",
+      "Xamarin.Forms >= 3.2.0.839982",
+      "ZXing.Net.Mobile >= 2.4.1",
+      "ZXing.Net.Mobile.Forms >= 2.4.1",
       "sqlite-net-pcl >= 1.5.231"
     ]
   },
@@ -1324,7 +1642,7 @@
         "dependencies": {
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "3.1.0.697729"
+            "version": "3.2.0.839982"
           },
           "BTProgressHUD": {
             "target": "Package",
@@ -1334,13 +1652,25 @@
             "target": "Package",
             "version": "1.5.231"
           },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "1.1.4.168"
+          },
           "Xam.Plugins.Forms.ImageCircle": {
             "target": "Package",
             "version": "3.0.0.5"
           },
-          "Rg.Plugins.Popup": {
+          "ZXing.Net.Mobile.Forms": {
             "target": "Package",
-            "version": "1.1.4.168"
+            "version": "2.4.1"
+          },
+          "ZXing.Net.Mobile": {
+            "target": "Package",
+            "version": "2.4.1"
+          },
+          "Xam.Plugin.DeviceInfo": {
+            "target": "Package",
+            "version": "4.0.0.13"
           }
         }
       }

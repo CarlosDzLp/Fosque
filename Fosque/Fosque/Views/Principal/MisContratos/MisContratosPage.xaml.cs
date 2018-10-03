@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Fosque.ViewModels.MasterPrincipal.Contratos;
 
 namespace Fosque.Views.Principal.MisContratos
 {
@@ -10,6 +11,7 @@ namespace Fosque.Views.Principal.MisContratos
         public MisContratosPage()
         {
             InitializeComponent();
+            this.BindingContext = new ContratosViewModel();
         }
     }
 }

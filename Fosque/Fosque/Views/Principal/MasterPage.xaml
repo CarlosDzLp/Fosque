@@ -7,17 +7,6 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     Title="Master"
+    xmlns:navigation="clr-namespace:Fosque.Helpers"
     BackgroundColor="White">
-    <MasterDetailPage.Master>
-        <page:MenuPage/>
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
-        <NavigationPage
-            BarTextColor="White"
-            BarBackgroundColor="#004C3F">
-            <x:Arguments>
-                <page:HomePage/>
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>
 </MasterDetailPage>

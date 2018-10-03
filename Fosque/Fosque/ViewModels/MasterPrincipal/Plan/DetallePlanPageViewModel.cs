@@ -10,6 +10,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.Diagnostics;
 using Fosque.Views.Principal.MisPlanes;
+using Fosque.Dependency;
 
 namespace Fosque.ViewModels.MasterPrincipal.Plan
 {
@@ -60,6 +61,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
 
         private async void GetSubPlanUser()
         {
+            DependencyService.Get<IProgressDialog>().ProgressDialogShow();
             IsBusy = true;
             ListSubPlan = new ObservableCollection<SubPlanEntrenamiento>();
             ListSubPlan.Clear();
@@ -68,6 +70,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             var result = db.GetUsuario();
             var query = $"pnl/spapp/ws_planentrenamiento_planes?client={result.Client}&socio={result.IdUser}& id={_plan.ID}";
             var response = await client.GetListAllWithParam<List<SubPlanEntrenamiento>>(Configuration.BaseUrl, query);
+            DependencyService.Get<IProgressDialog>().ProgressDialogHide();
             if (response != null)
             {
                 if (response.Count > 0)

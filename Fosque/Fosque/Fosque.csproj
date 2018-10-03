@@ -10,11 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />  
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />  
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
-    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.1.4.168" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="Xam.Plugin.DeviceInfo" Version="4.0.0.13" />
+    <PackageReference Include="Com.OneSignal" Version="3.2.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -36,6 +40,10 @@
     <Folder Include="Views\Principal\MisTurnos\" />
     <Folder Include="ViewModels\MasterPrincipal\Plan\" />
     <Folder Include="Helpers\" />
+    <Folder Include="ViewModels\MasterPrincipal\Configuracion\" />
+    <Folder Include="ViewModels\MasterPrincipal\Perfil\" />
+    <Folder Include="ViewModels\MasterPrincipal\Contratos\" />
+    <Folder Include="ViewModels\MasterPrincipal\Turnos\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\HomeMenuItem.cs" />

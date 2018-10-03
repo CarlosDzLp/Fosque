@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Fosque.ViewModels.MasterPrincipal.Perfil;
 
 namespace Fosque.Views.Principal.MiPerfil
 {
@@ -10,6 +11,7 @@ namespace Fosque.Views.Principal.MiPerfil
         public MiPerfilPage()
         {
             InitializeComponent();
+            this.BindingContext = new PerfilViewModel();
         }
     }
 }

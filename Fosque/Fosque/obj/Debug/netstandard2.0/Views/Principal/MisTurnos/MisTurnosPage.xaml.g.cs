@@ -16,7 +16,7 @@ namespace Fosque.Views.Principal.MisTurnos {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Principal/MisTurnos/MisTurnosPage.xaml")]
     public partial class MisTurnosPage : global::Xamarin.Forms.ContentPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MisTurnosPage));
         }

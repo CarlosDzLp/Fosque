@@ -5,8 +5,50 @@
     x:Class="Fosque.Views.Principal.MiConfiguarion.MiConfiguracionPage"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
-    BackgroundColor="White"
+    BackgroundColor="#EDEDED"
     Title="Configuracion">
     <ContentPage.Content>
+        <ScrollView
+            Orientation="Vertical"
+            VerticalScrollBarVisibility="Never">
+            <Grid
+                HorizontalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout
+                    Padding="0,15"
+                    BackgroundColor="White"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    VerticalOptions="Center">
+                    <Label
+                        Margin="5,0,0,0"
+                        HorizontalOptions="Start"
+                        HorizontalTextAlignment="Start"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center"
+                        Text="Activar/Desactivar Notificaciones"
+                        TextColor="Black"/>
+                </StackLayout>
+                <StackLayout
+                    Margin="-6,0,0,0"
+                    Padding="0,9"
+                    BackgroundColor="White"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    HorizontalOptions="End">
+                    <Switch
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        IsToggled="{Binding IsToggled}"
+                        OnColor="Teal"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

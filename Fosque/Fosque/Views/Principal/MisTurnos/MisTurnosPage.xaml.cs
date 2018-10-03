@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Fosque.ViewModels.MasterPrincipal.Turnos;
 using Xamarin.Forms;
 
 namespace Fosque.Views.Principal.MisTurnos
@@ -10,6 +10,7 @@ namespace Fosque.Views.Principal.MisTurnos
         public MisTurnosPage()
         {
             InitializeComponent();
+            this.BindingContext = new TurnosPageViewModel();
         }
     }
 }

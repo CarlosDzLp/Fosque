@@ -6,7 +6,59 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     BackgroundColor="White"
-    Title="Home">
+    Title="{Binding Title}">
     <ContentPage.Content>
+        <StackLayout>
+            <ListView
+                BackgroundColor="#EDEDED"
+                CachingStrategy="RecycleElement"
+                IsPullToRefreshEnabled="true"
+                RefreshCommand="{Binding IsBusyCommand}"
+                IsRefreshing="{Binding IsBusy}"
+                SelectionMode="Single"
+                HasUnevenRows="true"
+                SeparatorVisibility="None"
+                ItemsSource="{Binding ListPublicidad}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                HasShadow="false"
+                                Margin="10,5"
+                                BackgroundColor="White"
+                                Padding="10,5,10,10"
+                                CornerRadius="5">
+                                <StackLayout>
+                                    <Grid            
+                                        BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions> 
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <StackLayout
+                                            Grid.Column="0"
+                                            Grid.Row="0"
+                                            Orientation="Vertical">
+                                            <Label
+                                                VerticalTextAlignment="Center"
+                                                HorizontalTextAlignment="Center"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center"
+                                                Text="{Binding Titulo}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"/>
+                                            <Image
+                                                Source="{Binding Path=ImagenConvert}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

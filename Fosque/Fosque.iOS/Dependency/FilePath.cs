@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using Fosque.Dependency;
 using Fosque.iOS.Dependency;
@@ -10,6 +11,20 @@ namespace Fosque.iOS.Dependency
 {
     public class FilePath : IFilePath
     {
+        public string GetLenguages()
+        {
+            try
+            {
+                string currentUICulture = CultureInfo.CurrentUICulture.Name.ToString();
+                return currentUICulture;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
         public string GetPath()
         {
             try
