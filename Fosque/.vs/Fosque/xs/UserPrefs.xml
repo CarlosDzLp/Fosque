@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}|Default">
   <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A8BFF4DD-E2F7-4A47-9D60-CAA4AA9DF3E5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/DbLocal/DbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/ViewModels/MasterPrincipal/MisReservas/ReservasPageViewModel.cs">
     <Files>
-      <File FileName="Fosque/ViewModels/Session/LoginPageViewModel.cs" Line="175" Column="1" />
-      <File FileName="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" Line="42" Column="32" />
-      <File FileName="Fosque/Services/ServiceClient.cs" Line="17" Column="1" />
-      <File FileName="Fosque/App.xaml.cs" Line="37" Column="66" />
-      <File FileName="Fosque/DbLocal/DbContext.cs" Line="87" Column="1" />
+      <File FileName="Fosque/ViewModels/MasterPrincipal/MisReservas/ReservasPageViewModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

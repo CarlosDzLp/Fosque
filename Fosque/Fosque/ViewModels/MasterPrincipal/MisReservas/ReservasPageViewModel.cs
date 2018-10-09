@@ -115,7 +115,6 @@ namespace Fosque.ViewModels.MasterPrincipal.MisReservas
                         }
                         else
                         {
-                            await App.Current.MainPage.DisplayAlert("Reserva", "se dio en cancelar", "Aceptar");
                         }
                     }
                     Loadhistorialreserva();
