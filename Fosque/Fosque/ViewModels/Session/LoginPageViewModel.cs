@@ -7,6 +7,7 @@ using Fosque.Services;
 using Fosque.Models;
 using Fosque.DbLocal;
 using Fosque.Helpers;
+using System.Diagnostics;
 
 namespace Fosque.ViewModels.Session
 {
@@ -143,6 +144,24 @@ namespace Fosque.ViewModels.Session
             db.DeleteUsuario();
             usuario.IsRemember = IsToggled;
             db.Insertusuario(usuario);
+        }
+
+        //ver en que parte poner este codigo
+        private async void GetToken()
+        {
+            try
+            {
+                DbContext db = new DbContext();
+                ServiceClient client = new ServiceClient();
+                var user = db.GetUsuario();
+                var deviceinfo = Plugin.DeviceInfo.CrossDeviceInfo.Current;
+                var dependency = DependencyService.Get<IFilePath>().GetLenguages();
+                //var response = await client.GetListAllWithParam<string>(Configuration.BaseUrl, $"pnl/spapp/ws_registro_token?client={user.Client}&socio={user.IdUser}&player={}&token={}&plataforma={deviceinfo.Platform}&version={deviceinfo.Version}&pais={dependency}&versapp={deviceinfo.AppVersion}");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
         }
         #endregion
     }

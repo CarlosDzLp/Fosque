@@ -80,10 +80,8 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             ServiceClient client = new ServiceClient();
             DbContext db = new DbContext();
             var result = db.GetUsuario();
-            DependencyService.Get<IProgressDialog>().ProgressDialogShow();
             var query = $"pnl/spapp/ws_planentrenamiento_planes_ejercicios?client={result.Client}&socio={result.IdUser}&id={_idPlan}&tipo={_subPlan.Tipo}";
             var response = await client.GetListAllWithParam<List<PlanEntrenamientoEjercicios>>(Configuration.BaseUrl, query);
-            DependencyService.Get<IProgressDialog>().ProgressDialogHide();
             if (response != null)
             {
                 if (response.Count > 0)

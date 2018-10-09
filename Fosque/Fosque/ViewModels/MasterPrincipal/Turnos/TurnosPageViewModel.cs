@@ -61,14 +61,12 @@ namespace Fosque.ViewModels.MasterPrincipal.Turnos
             try
             {
                 IsBusy = true;
-                DependencyService.Get<IProgressDialog>().ProgressDialogShow();
                 ListReservas = new ObservableCollection<ReservaTurnosModel>();
                 ListReservas.Clear();
                 ServiceClient client = new ServiceClient();
                 var db = new DbContext();
                 var user = db.GetUsuario();
                 var response = await client.GetListAllWithParam<List<ReservaTurnosModel>>(Configuration.BaseUrl, $"pnl/spapp/wsturnero?client={user.Client}&sede={user.Sede}");
-                DependencyService.Get<IProgressDialog>().ProgressDialogHide();
                 if (response!=null)
                 {
                     if (response.Count > 0)

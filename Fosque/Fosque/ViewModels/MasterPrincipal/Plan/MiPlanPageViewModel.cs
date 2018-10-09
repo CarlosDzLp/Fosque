@@ -59,7 +59,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
         #region Methods
         private async void GetPlanUser()
         {
-            DependencyService.Get<IProgressDialog>().ProgressDialogShow();
             IsBusy = true;
             ListPlanes = new ObservableCollection<PlanEntrenamiento>();
             ListPlanes.Clear();
@@ -68,7 +67,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             var result = db.GetUsuario();
             var query = $"pnl/spapp/ws_planentrenamiento_vigente?client={result.Client}&socio={result.IdUser}";
             var response = await client.GetListAllWithParam<List<PlanEntrenamiento>>(Configuration.BaseUrl, query);
-            DependencyService.Get<IProgressDialog>().ProgressDialogHide();
             if (response != null)
             {
                 if (response.Count > 0)

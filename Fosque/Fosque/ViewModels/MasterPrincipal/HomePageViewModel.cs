@@ -46,7 +46,6 @@ namespace Fosque.ViewModels.MasterPrincipal
             Title = user.NombreApp;
             loadHome();
             IsBusyCommand = new Command(loadHome);
-            GetToken();
         }
         #endregion
 
@@ -58,11 +57,9 @@ namespace Fosque.ViewModels.MasterPrincipal
                 IsBusy = true;
                 ListPublicidad = new ObservableCollection<HomeModel>();
                 listPublicidad.Clear();
-                DependencyService.Get<IProgressDialog>().ProgressDialogShow();
                 var user = db.GetUsuario();
                 ServiceClient client = new ServiceClient();
                 var response = await client.GetListAllWithParam<List<HomeModel>>(Configuration.BaseUrl, $"pnl/spapp/ws_home?client={user.Client}&ptovta={user.Sede}");
-                DependencyService.Get<IProgressDialog>().ProgressDialogShow();
                 if (response != null)
                 {
                     if (response.Count > 0)
@@ -85,21 +82,7 @@ namespace Fosque.ViewModels.MasterPrincipal
             }
         }
 
-        private async void GetToken()
-        {
-            try
-            {
-                ServiceClient client = new ServiceClient();
-                var user = db.GetUsuario();
-                var deviceinfo = Plugin.DeviceInfo.CrossDeviceInfo.Current;
-                var dependency = DependencyService.Get<IFilePath>().GetLenguages();
-                //var response = await client.GetListAllWithParam<string>(Configuration.BaseUrl, $"pnl/spapp/ws_registro_token?client={user.Client}&socio={user.IdUser}&player={}&token={}&plataforma={deviceinfo.Platform}&version={deviceinfo.Version}&pais={dependency}&versapp={deviceinfo.AppVersion}");
-            }
-            catch(Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-            }
-        }
+
 
 
         #endregion

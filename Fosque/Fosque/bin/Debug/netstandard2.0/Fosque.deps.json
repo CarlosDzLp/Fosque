@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "f2805f7ab8183822d590b7711b90f38df2420bc0"
+    "signature": "8ab23ad35c20edf44d4534938712bca43866dfb4"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,6 @@
     ".NETStandard,Version=v2.0/": {
       "Fosque/1.0.0": {
         "dependencies": {
-          "Com.OneSignal": "3.2.1",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
@@ -22,21 +21,6 @@
         },
         "runtime": {
           "Fosque.dll": {}
-        }
-      },
-      "Com.OneSignal/3.2.1": {
-        "dependencies": {
-          "NETStandard.Library": "2.0.3"
-        },
-        "runtime": {
-          "lib/netstandard1.0/Com.OneSignal.Abstractions.dll": {
-            "assemblyVersion": "3.2.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/netstandard1.0/Com.OneSignal.dll": {
-            "assemblyVersion": "3.2.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -173,13 +157,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Com.OneSignal/3.2.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FWPDKJaq7CEbvybeGezdI9sc1A923GSQvFUsB7kJe7Ys9spOHc1gfat+fKGJleYpMy/8ziw/EnWdh26JeP/4OQ==",
-      "path": "com.onesignal/3.2.1",
-      "hashPath": "com.onesignal.3.2.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

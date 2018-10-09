@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Fosque.ViewModels.MasterPrincipal.MisReservas;
 
 namespace Fosque.Views.Principal.MisReservas
 {
@@ -10,6 +11,7 @@ namespace Fosque.Views.Principal.MisReservas
         public MisReservasPage()
         {
             InitializeComponent();
+            this.BindingContext = new ReservasPageViewModel();
         }
     }
 }

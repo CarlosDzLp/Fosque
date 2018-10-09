@@ -8,5 +8,68 @@
     BackgroundColor="White"
     Title="Mis Reservas">
     <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#EDEDED"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <ListView
+                BackgroundColor="#EDEDED"
+                CachingStrategy="RecycleElement"
+                IsPullToRefreshEnabled="true"
+                RefreshCommand="{Binding IsBusyCommand}"
+                IsRefreshing="{Binding IsBussy}"
+                SelectedItem="{Binding SelectedItemHistorial}"
+                SelectionMode="Single"
+                HasUnevenRows="true"
+                SeparatorVisibility="None"
+                ItemsSource="{Binding ListhistorialReserva}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                HasShadow="false"
+                                Margin="10,5"
+                                BackgroundColor="White"
+                                Padding="10,25"
+                                CornerRadius="5">
+                                <StackLayout>
+                                    <Grid            
+                                        BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions> 
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <StackLayout
+                                            Grid.Column="0"
+                                            Grid.Row="0"
+                                            Orientation="Vertical">
+                                            <Label
+                                                VerticalTextAlignment="Center"
+                                                HorizontalTextAlignment="Center"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center"
+                                                Text="{Binding DescripcionConcepto}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"/>
+                                            <Label
+                                                VerticalTextAlignment="Center"
+                                                HorizontalTextAlignment="Center"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center"
+                                                IsVisible="{Binding IsVisibleText}"
+                                                Text="{Binding Fecha}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

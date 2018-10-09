@@ -21,7 +21,7 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <StackLayout
-                    Padding="0,15"
+                    Padding="10,15"
                     BackgroundColor="White"
                     Grid.Column="0"
                     Grid.Row="0"
@@ -43,6 +43,7 @@
                     Grid.Row="0"
                     HorizontalOptions="End">
                     <Switch
+                        Margin="0,0,10,0"
                         VerticalOptions="Center"
                         HorizontalOptions="Center"
                         IsToggled="{Binding IsToggled}"

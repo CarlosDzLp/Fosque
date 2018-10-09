@@ -11,9 +11,12 @@
         <ScrollView
             Orientation="Vertical"
             VerticalScrollBarVisibility="Never">
-            <StackLayout>
+            <StackLayout
+                Margin="30,20"
+                Spacing="20">
                 <StackLayout>
                     <Label
+                        FontSize="Large"
                         VerticalOptions="Center"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
@@ -22,9 +25,75 @@
                         Text="RESERVA DE TURNOS"/>
                 </StackLayout>
                 <StackLayout
+                    Orientation="Vertical">
+                    <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding Detail.DescripcionConcepto}"/>
+                </StackLayout>
+                <StackLayout
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal">
+                    <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding Detail.Sala}"/>
+                    <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding Detail.Inicio}"/>
+                    <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding Detail}"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Vertical"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+                    <Label
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Text="Detalle:"
+                        TextColor="Black"
+                        FontSize="Medium"/>
+                    <Label
+                        Text="{Binding Detail.Informacion}"
+                        TextColor="Black"
+                        FontSize="Small"/>
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Cupo:"
+                        TextColor="Black"
+                        FontSize="Medium"/>
+                    <Label
+                        Text="{Binding Detail.Cupo}"
+                        TextColor="Black"
+                        FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout
                     VerticalOptions="Center"
                     HorizontalOptions="Center">
                     <Button
+                        IsEnabled="{Binding IsEnabled}"
                         VerticalOptions="Center"
                         HorizontalOptions="Center"
                         Text="RESERVAR LA CLASE"

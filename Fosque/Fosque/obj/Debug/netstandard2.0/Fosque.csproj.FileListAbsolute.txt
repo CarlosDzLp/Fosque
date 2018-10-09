@@ -19,9 +19,6 @@
 /Users/carlosdiaz/Projects/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/PlanPage.xaml.g.cs
 /Users/carlosdiaz/Projects/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/ReservasPage.xaml.g.cs
 /Users/carlosdiaz/Projects/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/TurnosPage.xaml.g.cs
-/Users/carlosdiaz/Fosque/Fosque/Fosque/bin/Debug/netstandard2.0/Fosque.deps.json
-/Users/carlosdiaz/Fosque/Fosque/Fosque/bin/Debug/netstandard2.0/Fosque.dll
-/Users/carlosdiaz/Fosque/Fosque/Fosque/bin/Debug/netstandard2.0/Fosque.pdb
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/HomePage.xaml.g.cs
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Views/Principal/MasterPage.xaml.g.cs
@@ -42,6 +39,9 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.csproj.CoreCompileInputs.cache
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.AssemblyInfoInputs.cache
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.AssemblyInfo.cs
+/Users/carlosdiaz/Fosque/Fosque/Fosque/bin/Debug/netstandard2.0/Fosque.deps.json
+/Users/carlosdiaz/Fosque/Fosque/Fosque/bin/Debug/netstandard2.0/Fosque.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque/bin/Debug/netstandard2.0/Fosque.pdb
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.pdb
