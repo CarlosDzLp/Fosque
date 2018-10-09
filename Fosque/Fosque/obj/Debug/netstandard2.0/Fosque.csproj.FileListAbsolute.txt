@@ -45,3 +45,4 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.pdb
+/Users/carlosdiaz/Fosque/Fosque/Fosque/obj/Debug/netstandard2.0/Fosque.csprojAssemblyReference.cache

@@ -11,6 +11,19 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -258,6 +271,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.0.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugin.DeviceInfo": "4.0.0.13",
@@ -285,6 +299,19 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -532,6 +559,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.0.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugin.DeviceInfo": "4.0.0.13",
@@ -559,6 +587,19 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -806,6 +847,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.0.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugin.DeviceInfo": "4.0.0.13",
@@ -833,6 +875,19 @@
           "lib/Xamarin.iOS10/BTProgressHUD.dll": {}
         }
       },
+      "Com.OneSignal/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Com.OneSignal.dll": {},
+          "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -1080,6 +1135,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Com.OneSignal": "3.0.1",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
           "Xam.Plugin.DeviceInfo": "4.0.0.13",
@@ -1108,6 +1164,26 @@
         "btprogresshud.1.2.0.6.nupkg.sha512",
         "btprogresshud.nuspec",
         "lib/Xamarin.iOS10/BTProgressHUD.dll"
+      ]
+    },
+    "Com.OneSignal/3.0.1": {
+      "sha512": "/jOk8gAvhPkpwP2uoZWzaVWMxnR/tH9JIIIiiJV3CmRro5BXSor6g70hJB6v7si1Bubkto8HrRc1Oas8rJZjOA==",
+      "type": "package",
+      "path": "com.onesignal/3.0.1",
+      "files": [
+        "com.onesignal.3.0.1.nupkg.sha512",
+        "com.onesignal.nuspec",
+        "lib/MonoAndroid/Com.OneSignal.Abstractions.dll",
+        "lib/MonoAndroid/Com.OneSignal.dll",
+        "lib/MonoAndroid/Com.OneSignal.dll.mdb",
+        "lib/MonoAndroid/OneSignal.Android.Binding.dll",
+        "lib/MonoAndroid/OneSignal.Android.Binding.dll.mdb",
+        "lib/Xamarin.iOS10/Com.OneSignal.Abstractions.dll",
+        "lib/Xamarin.iOS10/Com.OneSignal.dll",
+        "lib/Xamarin.iOS10/Com.OneSignal.dll.mdb",
+        "lib/Xamarin.iOS10/OneSignal.iOS.Binding.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Com.OneSignal.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Com.OneSignal.dll"
       ]
     },
     "Newtonsoft.Json/11.0.2": {
@@ -1502,6 +1578,7 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "BTProgressHUD >= 1.2.0.6",
+      "Com.OneSignal >= 3.0.1",
       "Fosque >= 1.0.0",
       "Rg.Plugins.Popup >= 1.1.4.168",
       "Xam.Plugin.DeviceInfo >= 4.0.0.13",
@@ -1577,6 +1654,10 @@
           "Xam.Plugin.DeviceInfo": {
             "target": "Package",
             "version": "4.0.0.13"
+          },
+          "Com.OneSignal": {
+            "target": "Package",
+            "version": "3.0.1"
           }
         }
       }

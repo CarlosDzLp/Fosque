@@ -1,6 +1,11 @@
 ﻿<Properties StartupConfiguration="{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}|Default">
   <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A8BFF4DD-E2F7-4A47-9D60-CAA4AA9DF3E5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/App.xaml.cs">
+    <Files>
+      <File FileName="Fosque/ViewModels/Session/LoginPageViewModel.cs" Line="149" Column="45" />
+      <File FileName="Fosque/App.xaml.cs" Line="33" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

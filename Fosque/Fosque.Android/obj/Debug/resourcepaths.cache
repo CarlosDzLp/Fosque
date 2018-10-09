@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <AdditionalAndroidResourcePaths />
-  <AdditionalJavaLibraryReferences />
+  <AdditionalAndroidResourcePaths>
+    <AdditionalAndroidResourcePath>/Users/carlosdiaz/.local/share/Xamarin/Xamarin.GooglePlayServices.Base/8.1.0/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/carlosdiaz/.local/share/Xamarin/Xamarin.GooglePlayServices.Basement/8.1.0/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/carlosdiaz/.local/share/Xamarin/Xamarin.GooglePlayServices.Gcm/8.1.0/embedded</AdditionalAndroidResourcePath>
+  </AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>
+    <AdditionalJavaLibraryReference>/Users/carlosdiaz/.local/share/Xamarin/Xamarin.GooglePlayServices.Base/8.1.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/carlosdiaz/.local/share/Xamarin/Xamarin.GooglePlayServices.Basement/8.1.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/carlosdiaz/.local/share/Xamarin/Xamarin.GooglePlayServices.Gcm/8.1.0/embedded/classes.jar</AdditionalJavaLibraryReference>
+  </AdditionalJavaLibraryReferences>
   <AdditionalNativeLibraryReferences />
 </Paths>

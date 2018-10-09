@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "8ab23ad35c20edf44d4534938712bca43866dfb4"
+    "signature": "31c0564e641070737cf03ccfce9e1b1b06b03c55"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Fosque/1.0.0": {
         "dependencies": {
+          "Com.OneSignal": "3.0.1",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
           "Rg.Plugins.Popup": "1.1.4.168",
@@ -21,6 +22,18 @@
         },
         "runtime": {
           "Fosque.dll": {}
+        }
+      },
+      "Com.OneSignal/3.0.1": {
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Com.OneSignal.Abstractions.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          },
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Com.OneSignal.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -157,6 +170,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Com.OneSignal/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/jOk8gAvhPkpwP2uoZWzaVWMxnR/tH9JIIIiiJV3CmRro5BXSor6g70hJB6v7si1Bubkto8HrRc1Oas8rJZjOA==",
+      "path": "com.onesignal/3.0.1",
+      "hashPath": "com.onesignal.3.0.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

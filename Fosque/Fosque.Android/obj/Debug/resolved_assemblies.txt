@@ -1,5 +1,7 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Fosque.Android.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/AndHUD.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Com.OneSignal.Abstractions.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Com.OneSignal.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/FastAndroidCamera.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/FormsViewGroup.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Fosque.dll
@@ -8,6 +10,7 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Mono.Android.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/mscorlib.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Newtonsoft.Json.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/OneSignal.Android.Binding.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Plugin.CurrentActivity.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Plugin.DeviceInfo.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Rg.Plugins.Popup.dll
@@ -45,11 +48,19 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Xamarin.Forms.Platform.Android.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Xamarin.Forms.Platform.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Xamarin.GooglePlayServices.Base.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Xamarin.GooglePlayServices.Basement.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Xamarin.GooglePlayServices.Gcm.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/ZXing.Net.Mobile.Core.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/ZXing.Net.Mobile.Forms.Android.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/ZXing.Net.Mobile.Forms.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/zxing.portable.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/ZXingNetMobile.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Collections.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.IO.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Runtime.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
+/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/netstandard.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Data.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Numerics.dll
@@ -58,7 +69,6 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Globalization.Extensions.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.IO.Compression.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.dll
-/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Net.Http.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
@@ -68,10 +78,8 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Security.SecureString.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Web.Services.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Xml.XPath.XDocument.dll
-/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Runtime.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Diagnostics.Debug.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Threading.dll
-/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Collections.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Collections.Concurrent.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Reflection.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Linq.Expressions.dll
@@ -80,11 +88,9 @@
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.ObjectModel.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Linq.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Runtime.InteropServices.dll
-/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Reflection.Extensions.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Threading.Tasks.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Globalization.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/Mono.Security.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Text.Encoding.dll
-/Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.IO.dll
 /Users/carlosdiaz/Fosque/Fosque/Fosque.Android/obj/Debug/android/assets/System.Text.RegularExpressions.dll

@@ -5,6 +5,7 @@ using Fosque.Views.Session;
 using Fosque.Views.Principal;
 using System.Diagnostics;
 using Fosque.DbLocal;
+using Com.OneSignal;
 //using Com.OneSignal;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -30,8 +31,8 @@ namespace Fosque
             {
                 MainPage = GetNavigationPage(new LoginPage());
             }
-            //OneSignal.Current.StartInit("686c5ffc-56c9-4485-b6b1-9ade7c69264f").EndInit();
-            //OneSignal.Current.IdsAvailable();
+            OneSignal.Current.StartInit("686c5ffc-56c9-4485-b6b1-9ade7c69264f").EndInit();
+            OneSignal.Current.IdsAvailable(IdsAvailable);
         }
         public async void IdsAvailable(string playerId,string pushToken)
         {
