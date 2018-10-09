@@ -98,6 +98,7 @@ namespace Fosque.ViewModels.Session
                             if (response.StatusCode == "200")
                             {
                                 Insert(response);
+                                GetToken();
                                 DependencyService.Get<IProgressDialog>().ProgressDialogHide();
                                 App.Current.MainPage = new Views.Principal.MasterPage();
                             }
@@ -154,9 +155,14 @@ namespace Fosque.ViewModels.Session
                 DbContext db = new DbContext();
                 ServiceClient client = new ServiceClient();
                 var user = db.GetUsuario();
+                var token = db.GetToken();
                 var deviceinfo = Plugin.DeviceInfo.CrossDeviceInfo.Current;
                 var dependency = DependencyService.Get<IFilePath>().GetLenguages();
-                //var response = await client.GetListAllWithParam<string>(Configuration.BaseUrl, $"pnl/spapp/ws_registro_token?client={user.Client}&socio={user.IdUser}&player={}&token={}&plataforma={deviceinfo.Platform}&version={deviceinfo.Version}&pais={dependency}&versapp={deviceinfo.AppVersion}");
+                var response = await client.GetListAllWithParam<int>(Configuration.BaseUrl, $"pnl/spapp/ws_registro_token?client={user.Client}&socio={user.IdUser}&player={token.PlayerID}&token={token.Token}&plataforma={deviceinfo.Platform}&version={deviceinfo.Version}&pais={dependency}&versapp={deviceinfo.AppVersion}");
+                if(response==200)
+                {
+
+                }
             }
             catch (Exception ex)
             {

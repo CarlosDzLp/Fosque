@@ -36,9 +36,22 @@ namespace Fosque
         }
         public async void IdsAvailable(string playerId,string pushToken)
         {
-            var VUserId = playerId;
-            var Vpushtoken = pushToken;
-
+            var db = new DbContext();
+            var token = db.GetToken();
+            if(token != null)
+            {
+                var table = new TableToken();
+                table.PlayerID = playerId;
+                table.Token = pushToken;
+                db.UpdateToken(table);
+            }
+            else
+            {
+                var table = new TableToken();
+                table.PlayerID = playerId;
+                table.Token = pushToken;
+                db.InsertToken(table);
+            }
         }
         public static Page GetNavigationPage(Page page)
         {

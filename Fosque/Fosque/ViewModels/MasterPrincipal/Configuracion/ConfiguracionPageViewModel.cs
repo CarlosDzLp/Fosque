@@ -45,17 +45,18 @@ namespace Fosque.ViewModels.MasterPrincipal.Configuracion
             {
                 var db = new DbContext();
                 var user = db.GetUsuario();
+                var token = db.GetToken();
                 DependencyService.Get<IProgressDialog>().ProgressDialogShow();
-                //var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"pnl/spapp/ws_token_push_update?client={user.Client}&player={}&token={}&status={IsToggled}");
+                var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"pnl/spapp/ws_token_push_update?client={user.Client}&player={token.PlayerID}&token={token.Token}&status={IsToggled}");
                 DependencyService.Get<IProgressDialog>().ProgressDialogHide();
-                //if(!string.IsNullOrEmpty(response.Token))
-                //{
-                  //  IsToggled = Convert.ToBoolean(response.StatusCode);
-                //}
-                //else
-                //{
+                if(!string.IsNullOrEmpty(response.Token))
+                {
+                    IsToggled = Convert.ToBoolean(response.StatusCode);
+                }
+                else
+                {
                     App.MessageError("Intentelo mas tarde");
-                //}
+                }
             }
             catch (Exception ex)
             {
@@ -68,17 +69,18 @@ namespace Fosque.ViewModels.MasterPrincipal.Configuracion
             {
                 var db = new DbContext();
                 var user = db.GetUsuario();
+                var token = db.GetToken();
                 DependencyService.Get<IProgressDialog>().ProgressDialogShow();
-                //var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"/pnl/spapp/ws_token_push_status?client={user.Client}&player={}&token={}");
+                var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"/pnl/spapp/ws_token_push_status?client={user.Client}&player={token.PlayerID}&token={token.Token}");
                 DependencyService.Get<IProgressDialog>().ProgressDialogHide();
-                //if(!string.IsNullOrEmpty(response.Token))
-                //{
-                   // IsToggled = Convert.ToBoolean(response.StatusCode);
-                //}
-                //else
-                //{
+                if(!string.IsNullOrEmpty(response.Token))
+                {
+                    IsToggled = Convert.ToBoolean(response.StatusCode);
+                }
+                else
+                {
                     App.MessageError("hubo un error intentelo mas tarde");
-                //}
+                }
             }
             catch (Exception ex)
             {

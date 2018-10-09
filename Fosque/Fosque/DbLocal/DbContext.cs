@@ -18,6 +18,7 @@ namespace Fosque.DbLocal
                 var dbPath = DependencyService.Get<IFilePath>().GetPath();
                 connection = new SQLiteConnection(dbPath, true);
                 connection.CreateTable<UsuarioModel>();
+                connection.CreateTable<TableToken>();
             }
             catch (SQLiteException ex)
             {
@@ -34,7 +35,7 @@ namespace Fosque.DbLocal
             {
                 connection.Insert(usuario);
             }
-            catch(SQLiteException ex)
+            catch (SQLiteException ex)
             {
                 Debug.WriteLine(ex.Message);
             }
@@ -45,7 +46,7 @@ namespace Fosque.DbLocal
             {
                 connection.DeleteAll<UsuarioModel>();
             }
-            catch(SQLiteException ex)
+            catch (SQLiteException ex)
             {
                 Debug.WriteLine(ex.Message);
             }
@@ -57,10 +58,48 @@ namespace Fosque.DbLocal
                 var result = connection.Table<UsuarioModel>().FirstOrDefault();
                 return result;
             }
-            catch(SQLiteException ex)
+            catch (SQLiteException ex)
             {
                 Debug.WriteLine(ex.Message);
                 return null;
+            }
+        }
+        #endregion
+
+        #region token
+        public TableToken GetToken()
+        {
+            try
+            {
+                var token = connection.Table<TableToken>().FirstOrDefault();
+                return token;
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+        }
+        public void UpdateToken(TableToken token)
+        {
+            try
+            {
+                connection.Update(token);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
+        public void InsertToken(TableToken token)
+        {
+            try
+            {
+                connection.Insert(token);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
             }
         }
         #endregion
