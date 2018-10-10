@@ -39,7 +39,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Perfil
                 var db = new DbContext();
                 var user = db.GetUsuario();
                 ServiceClient client = new ServiceClient();
-                var response = await client.GetListAllWithParam<PerfilModel>(Configuration.BaseUrl, $"pnl/api/get_membresias_socioApp?client={user.Client}&socio={user.DNI}");
+                var response = await client.GetListAllWithParam<PerfilModel>(Configuration.BaseUrl, $"pnl/api/get_socioApp?client={user.Client}&socio={user.DNI}");
                 DependencyService.Get<IProgressDialog>().ProgressDialogHide();
                 if (response != null)
                 {

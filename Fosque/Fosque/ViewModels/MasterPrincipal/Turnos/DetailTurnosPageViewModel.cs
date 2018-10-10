@@ -24,7 +24,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Turnos
             get { return detail; }
             set { SetProperty(ref detail, value); }
         }
-        private bool isEnabled = true;
+        private bool isEnabled = false;
         public bool IsEnabled
         {
             get { return isEnabled; }
@@ -56,6 +56,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Turnos
                 {
                     if (response.Count > 0)
                     {
+                        IsEnabled = true;
                         var model = response.FirstOrDefault();
                         Detail = new DetailTurnosModel();
                         Detail = model;

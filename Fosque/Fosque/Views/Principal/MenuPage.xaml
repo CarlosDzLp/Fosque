@@ -15,13 +15,14 @@
                     Source="bannergray.png"/>
             </StackLayout>
             <ListView
+                x:Name="LisMenu"
                 SeparatorColor="White"
                 BackgroundColor="Black"
                 Footer=""
+                ItemSelected="HandleItemSelected"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand"
-                ItemsSource="{Binding ListMenuLateral}"
-                SelectedItem="{Binding ItemSelectedMenu}">
+                SelectionMode="Single">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

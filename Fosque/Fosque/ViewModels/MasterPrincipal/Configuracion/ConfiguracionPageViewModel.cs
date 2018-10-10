@@ -43,15 +43,24 @@ namespace Fosque.ViewModels.MasterPrincipal.Configuracion
         {
             try
             {
+                int validate = 0;
                 var db = new DbContext();
                 var user = db.GetUsuario();
                 var token = db.GetToken();
                 DependencyService.Get<IProgressDialog>().ProgressDialogShow();
-                var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"pnl/spapp/ws_token_push_update?client={user.Client}&player={token.PlayerID}&token={token.Token}&status={IsToggled}");
-                DependencyService.Get<IProgressDialog>().ProgressDialogHide();
-                if(!string.IsNullOrEmpty(response.Token))
+                if(IsToggled)
                 {
-                    IsToggled = Convert.ToBoolean(response.StatusCode);
+                    validate = 1;
+                }
+                else
+                {
+                    validate = 0;
+                }
+                var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"pnl/spapp/ws_token_push_update?client={user.Client}&player={token.PlayerID}&token={token.Token}&status={validate}");
+                DependencyService.Get<IProgressDialog>().ProgressDialogHide();
+                if(!string.IsNullOrEmpty(response.StatusCode))
+                {
+                    //
                 }
                 else
                 {
@@ -73,9 +82,17 @@ namespace Fosque.ViewModels.MasterPrincipal.Configuracion
                 DependencyService.Get<IProgressDialog>().ProgressDialogShow();
                 var response = await client.GetListAllWithParam<ConfiguracionModel>(Configuration.BaseUrl, $"/pnl/spapp/ws_token_push_status?client={user.Client}&player={token.PlayerID}&token={token.Token}");
                 DependencyService.Get<IProgressDialog>().ProgressDialogHide();
-                if(!string.IsNullOrEmpty(response.Token))
+                if(!string.IsNullOrEmpty(response.StatusCode))
                 {
-                    IsToggled = Convert.ToBoolean(response.StatusCode);
+                    var status = response.StatusCode;
+                    if(status == "1")
+                    {
+                        IsToggled = true;
+                    }
+                    else
+                    {
+                        IsToggled = false;
+                    }
                 }
                 else
                 {
