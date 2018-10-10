@@ -1,6 +1,10 @@
 ﻿<Properties StartupConfiguration="{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}|Default">
   <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A8BFF4DD-E2F7-4A47-9D60-CAA4AA9DF3E5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs">
+    <Files>
+      <File FileName="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
@@ -14,6 +18,6 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.G2R4C17523003416" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MultiItemStartupConfigurations />
 </Properties>
