@@ -26,20 +26,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             set { SetProperty(ref listPlanes, value); }
         }
 
-        private PlanEntrenamiento selectedPlan;
-        public PlanEntrenamiento SelectedPlan
-        {
-            get { return selectedPlan; }
-            set
-            {
-                if (selectedPlan != value)
-                {
-                    SetProperty(ref selectedPlan, value);
-                    OnSelectedPlan();
-                }
-            }
-        }
-
         private bool isBusy;
         public bool IsBusy
         {
@@ -89,7 +75,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             IsBusy = false;
         }
 
-        private void OnSelectedPlan()
+        private void OnSelectedPlan(PlanEntrenamiento SelectedPlan)
         {
             try
             {
@@ -108,6 +94,17 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
 
         #region Command
         public ICommand IsBusyCommand { get; set; }
+        public ICommand ItemClickCommand
+        {
+            get
+            {
+                return new Command((item) =>
+                {
+                    var selected = item as PlanEntrenamiento;
+                    OnSelectedPlan(selected);
+                });
+            }
+        }
         #endregion
     }
 }

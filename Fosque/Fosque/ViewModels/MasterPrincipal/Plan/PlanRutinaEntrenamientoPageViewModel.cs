@@ -42,19 +42,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
                 SetProperty(ref listEjercicios, value);
             }
         }
-        private PlanEntrenamientoEjercicios selectedEjercicios;
-        public PlanEntrenamientoEjercicios SelectedEjercicios
-        {
-            get { return selectedEjercicios; }
-            set 
-            {
-                if (selectedEjercicios != value)
-                {
-                    SetProperty(ref selectedEjercicios, value);
-                    OnSelectedEjercicios();
-                }
-            }
-        }
 
         private SubPlanEntrenamiento _subPlan;
         #endregion
@@ -103,13 +90,13 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             }
             IsBusy = false;
         }
-        private void OnSelectedEjercicios()
+        private void OnSelectedEjercicios(PlanEntrenamientoEjercicios SelectedEjercicios)
         {
             try
             {
                 if (SelectedEjercicios != null)
                 {
-                    if (string.IsNullOrEmpty(SelectedEjercicios.Photo) && string.IsNullOrEmpty(selectedEjercicios.Photo))
+                    if (string.IsNullOrEmpty(SelectedEjercicios.Photo) && string.IsNullOrEmpty(SelectedEjercicios.Photo))
                     {
                         //SelectedEjercicios.Video = "imagenotfound.png";
                         //App.MasterPageDetail.IsPresented = false;
@@ -151,6 +138,17 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
 
         #region Commands
         public ICommand IsBusyCommand { get; set; }
+        public ICommand ItemClickCommand
+        {
+            get
+            {
+                return new Command((item) =>
+                {
+                    var selected = item as PlanEntrenamientoEjercicios;
+                    OnSelectedEjercicios(selected);
+                });
+            }
+        }
         #endregion
 
     }

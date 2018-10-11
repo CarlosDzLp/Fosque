@@ -3,15 +3,16 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Fosque.Views.Principal.HomePage"
+    xmlns:listcontrols="clr-namespace:Fosque.Controls;assembly=Fosque"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     BackgroundColor="White"
     Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout>
-            <ListView
+            <listcontrols:CustomListView
+                Footer=""              
                 BackgroundColor="#EDEDED"
-                CachingStrategy="RecycleElement"
                 IsPullToRefreshEnabled="true"
                 RefreshCommand="{Binding IsBusyCommand}"
                 IsRefreshing="{Binding IsBusy}"
@@ -19,7 +20,7 @@
                 HasUnevenRows="true"
                 SeparatorVisibility="None"
                 ItemsSource="{Binding ListPublicidad}">
-                <ListView.ItemTemplate>
+                <listcontrols:CustomListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame
@@ -57,8 +58,8 @@
                             </Frame>
                         </ViewCell>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </listcontrols:CustomListView.ItemTemplate>
+            </listcontrols:CustomListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

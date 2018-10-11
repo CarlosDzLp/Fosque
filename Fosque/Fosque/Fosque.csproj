@@ -45,6 +45,7 @@
     <Folder Include="ViewModels\MasterPrincipal\Contratos\" />
     <Folder Include="ViewModels\MasterPrincipal\Turnos\" />
     <Folder Include="ViewModels\MasterPrincipal\MisReservas\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\HomeMenuItem.cs" />

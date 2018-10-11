@@ -1,21 +1,23 @@
 ﻿<Properties StartupConfiguration="{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}|Default">
   <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A8BFF4DD-E2F7-4A47-9D60-CAA4AA9DF3E5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs">
+    <Files>
+      <File FileName="Fosque/ViewModels/MasterPrincipal/Turnos/DetailTurnosPageViewModel.cs" Line="87" Column="1" />
+      <File FileName="Fosque/ViewModels/MasterPrincipal/MisReservas/ReservasPageViewModel.cs" Line="79" Column="1" />
+      <File FileName="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" Line="85" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" line="146" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" line="133" column="1" />
       <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/Helpers/CustomNavigationPage.xaml.cs" relfile="Fosque/Helpers/CustomNavigationPage.xaml.cs" line="11" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Turnos/TurnosPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Turnos/TurnosPageViewModel.cs" line="103" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/MisReservas/ReservasPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/MisReservas/ReservasPageViewModel.cs" line="92" column="1" />
       <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" line="43" column="1" />
       <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" line="60" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" line="85" column="1" />
       <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/MenuPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/MenuPageViewModel.cs" line="20" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Turnos/DetailTurnosPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Turnos/DetailTurnosPageViewModel.cs" line="87" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.nexus_5" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.Fosque.Android PreferredExecutionTarget="Android.G2R4C17523003416" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MultiItemStartupConfigurations />
 </Properties>

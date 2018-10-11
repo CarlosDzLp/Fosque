@@ -28,19 +28,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Turnos
             get { return listReservas; }
             set { SetProperty(ref listReservas, value); }
         }
-        private ReservaTurnosModel selectedReserva;
-        public ReservaTurnosModel SelectedReserva
-        {
-            get { return selectedReserva; }
-            set 
-            { 
-                if(selectedReserva != value)
-                {
-                    SetProperty(ref selectedReserva, value);
-                    OnTapSelectedReserva();
-                }
-            }
-        }
         #endregion
 
         #region Constructor
@@ -53,6 +40,17 @@ namespace Fosque.ViewModels.MasterPrincipal.Turnos
 
         #region Commands
         public ICommand IsBusyCommand { get; set; }
+        public ICommand ItemClickCommand
+        {
+            get
+            {
+                return new Command((item) =>
+                {
+                    var selected = item as ReservaTurnosModel;
+                    OnTapSelectedReserva(selected);
+                });
+            }
+        }
         #endregion
 
         #region Methods
@@ -89,11 +87,11 @@ namespace Fosque.ViewModels.MasterPrincipal.Turnos
             }
         }
 
-        private void OnTapSelectedReserva()
+        private void OnTapSelectedReserva(ReservaTurnosModel SelectedReserva)
         {
             try
             {
-                if(selectedReserva!=null)
+                if(SelectedReserva != null)
                 {
                     App.MasterPageDetail.IsPresented = false;
                     App.MasterPageDetail.Detail.Navigation.PushAsync(new DetailTurnosPage(SelectedReserva.Id));

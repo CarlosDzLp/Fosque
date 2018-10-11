@@ -23,19 +23,6 @@ namespace Fosque.ViewModels.MasterPrincipal.MisReservas
             get { return listHistorialReserva; }
             set { SetProperty(ref listHistorialReserva, value); }
         }
-        private HistorialReservaModel selectedItemHistorial;
-        public HistorialReservaModel SelectedItemHistorial
-        {
-            get { return selectedItemHistorial; }
-            set
-            {
-                if (selectedItemHistorial != value)
-                {
-                    SetProperty(ref selectedItemHistorial, value);
-                    OnTapSelectedItem();
-                }
-            }
-        }
 
         private bool isBussy;
         public bool IsBussy
@@ -88,7 +75,7 @@ namespace Fosque.ViewModels.MasterPrincipal.MisReservas
             }
         }
 
-        private async void OnTapSelectedItem()
+        private async void OnTapSelectedItem(HistorialReservaModel SelectedItemHistorial)
         {
             try
             {
@@ -129,6 +116,17 @@ namespace Fosque.ViewModels.MasterPrincipal.MisReservas
 
         #region Command
         public ICommand IsBusyCommand { set; get; }
+        public ICommand ItemClickCommand
+        {
+            get
+            {
+                return new Command((item) =>
+                {
+                    var selected = item as HistorialReservaModel;
+                    OnTapSelectedItem(selected);
+                });
+            }
+        }
         #endregion
 
     }

@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Fosque.Views.Principal.MisPlanes.MiPlanPage"
+    xmlns:listcontrols="clr-namespace:Fosque.Controls;assembly=Fosque"
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
@@ -13,18 +14,18 @@
             BackgroundColor="#EDEDED"
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand">
-            <ListView
+            <listcontrols:CustomListView
+                ItemClickCommand="{Binding ItemClickCommand}"
                 BackgroundColor="#EDEDED"
-                CachingStrategy="RecycleElement"
                 IsPullToRefreshEnabled="true"
                 RefreshCommand="{Binding IsBusyCommand}"
                 IsRefreshing="{Binding IsBusy}"
-                SelectedItem="{Binding SelectedPlan}"
                 SelectionMode="Single"
                 HasUnevenRows="true"
+                Footer=""
                 SeparatorVisibility="None"
                 ItemsSource="{Binding ListPlanes}">
-                <ListView.ItemTemplate>
+                <listcontrols:CustomListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame
@@ -96,8 +97,8 @@
                             </Frame>
                         </ViewCell>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </listcontrols:CustomListView.ItemTemplate>
+            </listcontrols:CustomListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

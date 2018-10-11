@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Fosque.Views.Principal.MisTurnos.MisTurnosPage"
+    xmlns:listcontrols="clr-namespace:Fosque.Controls;assembly=Fosque"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
     BackgroundColor="White"
@@ -24,64 +25,63 @@
             <StackLayout
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand">
-                <ListView
+                <listcontrols:CustomListView
+                    ItemClickCommand="{Binding ItemClickCommand}"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
                     BackgroundColor="#EDEDED"
-                    CachingStrategy="RecycleElement"
                     IsPullToRefreshEnabled="true"
                     RefreshCommand="{Binding IsBusyCommand}"
                     IsRefreshing="{Binding IsBusy}"
-                    SelectedItem="{Binding SelectedReserva}"
                     SelectionMode="Single"
                     HasUnevenRows="true"
                     SeparatorVisibility="None"
+                    Footer=""
                     ItemsSource="{Binding ListReservas}">
-                    <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Frame
-                                HasShadow="false"
-                                Margin="10,5"
-                                BackgroundColor="White"
-                                Padding="10,15"
-                                CornerRadius="5">
-                                <StackLayout>
-                                    <Grid            
-                                        BackgroundColor="White">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <StackLayout
-                                            Grid.Column="0">
-                                            <Label
-                                                TextColor="Maroon"
-                                                Text="{Binding Inicio}"/>
+                    <listcontrols:CustomListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame
+                                    HasShadow="false"
+                                    Margin="10,5"
+                                    BackgroundColor="White"
+                                    Padding="10,15"
+                                    CornerRadius="5">
+                                    <StackLayout>
+                                        <Grid            
+                                            BackgroundColor="White">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout
+                                                Grid.Column="0">
+                                                <Label
+                                                    TextColor="Maroon"
+                                                    Text="{Binding Inicio}"/>
+                                            </StackLayout>
+                                            <StackLayout
+                                                Grid.Column="1"
+                                                BackgroundColor="#004C3F"
+                                                WidthRequest="2">
+                                            </StackLayout>
+                                            <StackLayout
+                                                Grid.Column="2">
+                                                <Label
+                                                    TextColor="Black"
+                                                    Text="{Binding DescripcionConcepto}"/>
+                                                <Label
+                                                    TextColor="Black"
+                                                    Text="{Binding Sala}"/>
                                         </StackLayout>
-                                        <StackLayout
-                                            Grid.Column="1"
-                                            BackgroundColor="#004C3F"
-                                            WidthRequest="2">
-                                            
-                                        </StackLayout>
-                                        <StackLayout
-                                            Grid.Column="2">
-                                            <Label
-                                                TextColor="Black"
-                                                Text="{Binding DescripcionConcepto}"/>
-                                            <Label
-                                                TextColor="Black"
-                                                Text="{Binding Sala}"/>
-                                        </StackLayout>
-                                    </Grid>
-                                </StackLayout>
-                            </Frame>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>   
+                                        </Grid>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </listcontrols:CustomListView.ItemTemplate>
+                </listcontrols:CustomListView>   
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

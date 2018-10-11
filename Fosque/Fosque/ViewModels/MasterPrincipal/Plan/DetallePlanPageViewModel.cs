@@ -31,20 +31,6 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             get { return listSubPlan; }
             set { SetProperty(ref listSubPlan, value); }
         }
-
-        private SubPlanEntrenamiento selectedSubPlan;
-        public SubPlanEntrenamiento SelectedSubPlan
-        {
-            get { return selectedSubPlan; }
-            set
-            {
-                if (selectedSubPlan != value)
-                {
-                    SetProperty(ref selectedSubPlan, value);
-                    OnTapSelectedSubPlan();
-                }            
-            }
-        }
         #endregion
 
         #region Constructor
@@ -101,7 +87,7 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
             IsBusy = false;
         }
 
-        private void OnTapSelectedSubPlan()
+        private void OnTapSelectedSubPlan(SubPlanEntrenamiento SelectedSubPlan)
         {
             try
             {
@@ -120,6 +106,17 @@ namespace Fosque.ViewModels.MasterPrincipal.Plan
 
         #region Command
         public ICommand IsBusyCommand { get; set; }
+        public ICommand ItemClickCommand 
+        {
+            get
+            {
+                return new Command((item) =>
+                {
+                    var selected = item as SubPlanEntrenamiento;
+                    OnTapSelectedSubPlan(selected);
+                });
+            }
+        }
         #endregion
     }
 }
