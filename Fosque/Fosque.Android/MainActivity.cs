@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 using Android.Webkit;
+using Com.OneSignal;
 
 namespace Fosque.Droid
 {
@@ -26,6 +27,7 @@ namespace Fosque.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
             //CachedImageRenderer.Init(true);
+            OneSignal.Current.StartInit("90605ae0-321f-4bfe-b9e9-50a1776f5291").EndInit();
             ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer.Init();
             ZXing.Net.Mobile.Forms.Android.Platform.Init();
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);

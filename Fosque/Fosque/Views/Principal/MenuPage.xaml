@@ -5,19 +5,17 @@
     x:Class="Fosque.Views.Principal.MenuPage"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
-    BackgroundColor="Black"
     Title="Menu">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
                 Margin="20,40,20,20">
                 <Image
-                    Source="bannergray.png"/>
+                    x:Name="ImageLogo"/>
             </StackLayout>
             <ListView
                 x:Name="LisMenu"
                 SeparatorColor="White"
-                BackgroundColor="Black"
                 Footer=""
                 ItemSelected="HandleItemSelected"
                 VerticalOptions="FillAndExpand"

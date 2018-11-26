@@ -1,20 +1,10 @@
 ﻿<Properties StartupConfiguration="{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}|Default">
   <MonoDevelop.Ide.ItemProperties.Fosque.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A8BFF4DD-E2F7-4A47-9D60-CAA4AA9DF3E5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs">
-    <Files>
-      <File FileName="Fosque/ViewModels/MasterPrincipal/Turnos/DetailTurnosPageViewModel.cs" Line="87" Column="1" />
-      <File FileName="Fosque/ViewModels/MasterPrincipal/MisReservas/ReservasPageViewModel.cs" Line="79" Column="1" />
-      <File FileName="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" Line="85" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Plan/PlanRutinaEntrenamientoPageViewModel.cs" line="133" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/Helpers/CustomNavigationPage.xaml.cs" relfile="Fosque/Helpers/CustomNavigationPage.xaml.cs" line="11" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" line="43" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/Configuracion/ConfiguracionPageViewModel.cs" line="60" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Fosque/Fosque/Fosque/ViewModels/MasterPrincipal/MenuPageViewModel.cs" relfile="Fosque/ViewModels/MasterPrincipal/MenuPageViewModel.cs" line="20" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/Downloads/Fosque-master/Fosque/Fosque/Views/Principal/MenuPage.xaml.cs" relfile="Fosque/Views/Principal/MenuPage.xaml.cs" line="28" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

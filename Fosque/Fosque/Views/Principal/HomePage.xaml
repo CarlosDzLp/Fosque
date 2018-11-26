@@ -29,7 +29,7 @@
                                 BackgroundColor="White"
                                 Padding="10,5,10,10"
                                 CornerRadius="5">
-                                <StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
                                     <Grid            
                                         BackgroundColor="White">
                                         <Grid.ColumnDefinitions>
@@ -49,9 +49,11 @@
                                                 VerticalOptions="Center"
                                                 Text="{Binding Titulo}"
                                                 FontAttributes="Bold"
-                                                TextColor="Black"/>
+                                                TextColor="Black"
+                                                IsVisible="False"/>
                                             <Image
-                                                Source="{Binding Path=ImagenConvert}"/>
+                                                Source="{Binding Path=ImagenConvert}"
+                                                Aspect="Fill"/>
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>

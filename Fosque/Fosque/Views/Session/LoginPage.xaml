@@ -6,7 +6,7 @@
     xmlns:validate="clr-namespace:Fosque.Behaviors"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
     ios:Page.UseSafeArea="true"
-    BackgroundColor="#004C3F">
+    BackgroundColor="#EC018E">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout
@@ -25,19 +25,19 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"/>
                 <Entry
-                    BackgroundColor="#004C3F"
+                    BackgroundColor="#EC018E"
                     Text="{Binding Usuario}"
                     TextColor="White"
                     Placeholder="Usuario"
                     PlaceholderColor="White"/>
                 <Label
                     Text="Debe ingresar un Usuario"
-                    TextColor="Red"
+                    TextColor="White"
                     FontSize="Micro"
                     VerticalTextAlignment="Center"
                     IsVisible="{Binding IsUsuario}"/>
                 <Entry
-                    BackgroundColor="#004C3F"
+                    BackgroundColor="#EC018E"
                     Text="{Binding Documento}"
                     TextColor="White"
                     Placeholder="Numero de Documento"
@@ -49,12 +49,12 @@
                 </Entry>
                 <Label
                     Text="Debe ingresar un numero de documento"
-                    TextColor="Red"
+                    TextColor="White"
                     FontSize="Micro"
                     VerticalTextAlignment="Center"
                     IsVisible="{Binding IsDocumento}"/>
                 <Entry
-                    BackgroundColor="#004C3F"
+                    BackgroundColor="#EC018E"
                     Text="{Binding Password}"
                     TextColor="White"
                     Placeholder="Contraseña"
@@ -62,12 +62,13 @@
                     PlaceholderColor="White"/>
                 <Label
                     Text="Debe ingresar una contraseña"
-                    TextColor="Red"
+                    TextColor="White"
                     FontSize="Micro"
                     VerticalTextAlignment="Center"
                     IsVisible="{Binding IsContrasena}"/>
                 <Button
                     BackgroundColor="Black"
+                    BorderRadius="100"
                     Text="Ingresar"
                     TextColor="White"
                     Command="{Binding LoginCommand}"/>

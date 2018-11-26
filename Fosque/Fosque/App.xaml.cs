@@ -31,7 +31,7 @@ namespace Fosque
             {
                 MainPage = GetNavigationPage(new LoginPage());
             }
-            OneSignal.Current.StartInit("686c5ffc-56c9-4485-b6b1-9ade7c69264f").EndInit();
+            //OneSignal.Current.StartInit("90605ae0-321f-4bfe-b9e9-50a1776f5291").EndInit();
             OneSignal.Current.IdsAvailable(IdsAvailable);
         }
         public async void IdsAvailable(string playerId,string pushToken)
@@ -57,7 +57,7 @@ namespace Fosque
         {
             var result = new NavigationPage(page);
             result.BarTextColor = Color.White;
-            result.BarBackgroundColor = Color.FromHex("#004C3F");
+            result.BarBackgroundColor = Color.FromHex("#EC018E");
             return result;
         }
         public static void MessageError(string message)

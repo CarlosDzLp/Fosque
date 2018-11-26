@@ -1,2 +1,2 @@
 android.app.Application
-com.ecoser.Fosque
+com.fosque.android

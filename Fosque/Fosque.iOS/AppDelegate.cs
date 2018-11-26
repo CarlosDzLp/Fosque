@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 using CoreGraphics;
 using Xamarin.Forms;
+using Com.OneSignal;
 
 namespace Fosque.iOS
 {
@@ -30,6 +31,7 @@ namespace Fosque.iOS
             global::Xamarin.Forms.Forms.Init();
             ImageCircle.Forms.Plugin.iOS.ImageCircleRenderer.Init();
             ZXing.Net.Mobile.Forms.iOS.Platform.Init();
+            OneSignal.Current.StartInit("90605ae0-321f-4bfe-b9e9-50a1776f5291").EndInit();
             LoadApplication(new App());
             App.Alto = (int)UIScreen.MainScreen.Bounds.Height;
             App.Ancho = (int)UIScreen.MainScreen.Bounds.Width;

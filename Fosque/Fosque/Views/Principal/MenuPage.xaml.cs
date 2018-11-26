@@ -14,15 +14,21 @@ using Fosque.Views.Principal.MisTurnos;
 using Fosque.Views.Principal.MisReservas;
 using Fosque.Views.Principal.MisPlanes;
 using Fosque.Views.Principal.MiConfiguarion;
+using Fosque.Helpers;
 
 namespace Fosque.Views.Principal
 {
     public partial class MenuPage : ContentPage
     {
+        DbContext db = new DbContext();
         public ObservableCollection<MenuLateral> ListMenuLateral;
         public MenuPage()
         {
             InitializeComponent();
+            var user = db.GetUsuario();
+            ImageLogo.Source = ImageConvert.ConvertToBase(user.Logo);
+            BackgroundColor = Color.FromHex(user.Color);
+            LisMenu.BackgroundColor = Color.FromHex(user.Color);
             PopulatingMenu();
         }
 
@@ -30,14 +36,13 @@ namespace Fosque.Views.Principal
         {
             try
             {
-                if(e.SelectedItem==null)
+                if(e.SelectedItem == null)
                 {
                     return;
                 }
                 var ItemSelectedMenu = (MenuLateral)e.SelectedItem;
                 if (ItemSelectedMenu.id == 0)
                 {
-                    DbContext db = new DbContext();
                     db.DeleteUsuario();
                     App.Current.MainPage = App.GetNavigationPage(new Views.Session.LoginPage());
                 }
